@@ -22,6 +22,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          lighter: "hsl(var(--primary-lighter))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +49,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cream: "hsl(var(--cream))",
+        earth: "hsl(var(--earth))",
+        "warm-brown": "hsl(var(--warm-brown))",
+        "warm-brown-light": "hsl(var(--warm-brown-light))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +68,15 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        heading: ["var(--font-heading)"],
+        body: ["var(--font-body)"],
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
       },
       keyframes: {
         "accordion-down": {
