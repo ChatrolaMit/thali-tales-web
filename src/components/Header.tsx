@@ -42,8 +42,10 @@ const Header = () => {
               </a>
             ))}
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary transition-colors duration-200 font-medium">
-                Order Online <ChevronDown className="ml-1 h-4 w-4" />
+              <DropdownMenuTrigger asChild>
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 flex items-center gap-1">
+                  Order Online <ChevronDown className="h-4 w-4" />
+                </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-card border border-border shadow-lg">
                 <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground">

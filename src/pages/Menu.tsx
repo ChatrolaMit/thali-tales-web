@@ -194,11 +194,11 @@ const Menu = () => {
                         </div>
                       </div>
                       
-                      <div className="flex items-center justify-between">
+                      <div className="space-y-4">
                         <span className="text-2xl font-bold text-primary">{item.price}</span>
                         <Button 
                           onClick={() => addToCart(item.id)}
-                          className="flex items-center gap-2"
+                          className="flex items-center gap-2 w-full md:w-auto"
                         >
                           <Plus className="h-4 w-4" />
                           Add to Cart
