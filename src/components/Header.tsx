@@ -1,20 +1,22 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Order Online", href: "#order" },
-    { name: "Book a Table", href: "#book" },
-    { name: "We Serve", href: "#serve" },
+    { name: "Home", href: "/" },
+    { name: "Menu", href: "/menu" },
+    { name: "Catering", href: "/catering" },
     { name: "About Us", href: "#about" },
-    { name: "Amenities", href: "#amenities" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -39,6 +41,23 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary transition-colors duration-200 font-medium">
+                Order Online <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-card border border-border shadow-lg">
+                <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground">
+                  <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">
+                    Uber Eats
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground">
+                  <a href="https://doordash.com" target="_blank" rel="noopener noreferrer">
+                    DoorDash
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -70,6 +89,29 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              <div className="border-t border-border pt-3 mt-3">
+                <p className="text-sm font-medium text-muted-foreground mb-2">Order Online</p>
+                <div className="flex flex-col space-y-2 ml-4">
+                  <a
+                    href="https://ubereats.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-primary transition-colors duration-200 py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Uber Eats
+                  </a>
+                  <a
+                    href="https://doordash.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-primary transition-colors duration-200 py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    DoorDash
+                  </a>
+                </div>
+              </div>
             </div>
           </nav>
         )}
