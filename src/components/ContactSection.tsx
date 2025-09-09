@@ -1,7 +1,26 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { useForm } from "react-hook-form";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const { toast } = useToast();
+
+  const onSubmit = (data: any) => {
+    // Handle form submission
+    console.log('Form submitted:', data);
+    toast({
+      title: "Message Sent!",
+      description: "Thank you for your message. We'll get back to you soon.",
+    });
+    reset();
+  };
+
   return (
     <section id="contact" className="section-spacing bg-accent/30">
       <div className="section-container">
@@ -14,7 +33,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="card-elevated">
@@ -80,55 +99,142 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Quick Actions */}
-          <div className="space-y-6">
-            <div className="card-elevated text-center">
-              <h3 className="heading-tertiary mb-4">Quick Actions</h3>
-              <div className="space-y-4">
-                <Button className="btn-hero w-full" asChild>
-                  <a href="tel:+919876543210">📞 Call for Reservation</a>
-                </Button>
-                <Button className="btn-outline-hero w-full" asChild>
-                  <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">🛍️ Order Online</a>
-                </Button>
-                <Button className="btn-outline-hero w-full" asChild>
-                  <a href="https://maps.google.com/?q=123+Main+Street+Malad+West+Mumbai" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
-                </Button>
+          {/* Contact Form */}
+          <div className="card-elevated">
+            <h3 className="heading-tertiary mb-6">Send us a Message</h3>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="firstName">First Name</Label>
+                  <Input
+                    id="firstName"
+                    {...register("firstName", { required: "First name is required" })}
+                    className={errors.firstName ? "border-destructive" : ""}
+                  />
+                  {errors.firstName && (
+                    <p className="text-sm text-destructive">{String(errors.firstName.message)}</p>
+                  )}
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="lastName">Last Name</Label>
+                  <Input
+                    id="lastName"
+                    {...register("lastName", { required: "Last name is required" })}
+                    className={errors.lastName ? "border-destructive" : ""}
+                  />
+                  {errors.lastName && (
+                    <p className="text-sm text-destructive">{String(errors.lastName.message)}</p>
+                  )}
+                </div>
               </div>
-            </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    {...register("email", { 
+                      required: "Email is required",
+                      pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: "Invalid email address"
+                      }
+                    })}
+                    className={errors.email ? "border-destructive" : ""}
+                  />
+                  {errors.email && (
+                    <p className="text-sm text-destructive">{String(errors.email.message)}</p>
+                  )}
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    {...register("phone", { required: "Phone number is required" })}
+                    className={errors.phone ? "border-destructive" : ""}
+                  />
+                  {errors.phone && (
+                    <p className="text-sm text-destructive">{String(errors.phone.message)}</p>
+                  )}
+                </div>
+              </div>
 
-            <div className="card-elevated">
-              <h3 className="heading-tertiary mb-4">Special Offers</h3>
-              <div className="space-y-3">
-                <div className="bg-primary/10 rounded-lg p-3">
-                  <p className="font-semibold text-primary">🎉 Family Thali Special</p>
-                  <p className="text-sm text-muted-foreground">20% off on orders above ₹1000</p>
-                </div>
-                <div className="bg-primary/10 rounded-lg p-3">
-                  <p className="font-semibold text-primary">🚚 Free Delivery</p>
-                  <p className="text-sm text-muted-foreground">On orders above ₹500 within 5km</p>
-                </div>
-                <div className="bg-primary/10 rounded-lg p-3">
-                  <p className="font-semibold text-primary">🎂 Birthday Special</p>
-                  <p className="text-sm text-muted-foreground">Complimentary dessert for birthday celebrations</p>
-                </div>
+              <div className="space-y-2">
+                <Label htmlFor="message">Message</Label>
+                <Textarea
+                  id="message"
+                  rows={4}
+                  {...register("message", { required: "Message is required" })}
+                  className={errors.message ? "border-destructive" : ""}
+                />
+                {errors.message && (
+                  <p className="text-sm text-destructive">{String(errors.message.message)}</p>
+                )}
               </div>
-            </div>
 
-            <div className="card-elevated text-center">
-              <h3 className="heading-tertiary mb-4">Follow Us</h3>
-              <div className="flex justify-center space-x-4">
-                <Button variant="outline" size="sm" className="rounded-full" asChild>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
-                </Button>
-                <Button variant="outline" size="sm" className="rounded-full" asChild>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
-                </Button>
-                <Button variant="outline" size="sm" className="rounded-full" asChild>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
-                </Button>
+              <div className="flex items-center space-x-2">
+                <Checkbox 
+                  id="privacy" 
+                  {...register("privacy", { required: "You must accept the privacy policy" })}
+                />
+                <Label htmlFor="privacy" className="text-sm">
+                  I agree to the{" "}
+                  <a href="#" className="text-primary hover:underline">
+                    Privacy Policy
+                  </a>{" "}
+                  and consent to my data being processed.
+                </Label>
               </div>
-            </div>
+              {errors.privacy && (
+                <p className="text-sm text-destructive">{String(errors.privacy.message)}</p>
+              )}
+
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+                <Send className="w-4 h-4 mr-2" />
+                Send Message
+              </Button>
+            </form>
+          </div>
+        </div>
+
+        {/* Google Map */}
+        <div className="card-elevated">
+          <h3 className="heading-tertiary mb-6">Find Us</h3>
+          <div className="relative w-full h-64 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.1234567890!2d72.8376!3d19.1868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDExJzEyLjUiTiA3MsKwNTAnMTUuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Pure Veg Cuisine Location"
+            ></iframe>
+          </div>
+        </div>
+
+        {/* Quick Actions */}
+        <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="card-elevated text-center">
+            <Button className="btn-hero w-full mb-4" asChild>
+              <a href="tel:+919876543210">📞 Call for Reservation</a>
+            </Button>
+            <p className="text-sm text-muted-foreground">Quick phone reservation</p>
+          </div>
+          <div className="card-elevated text-center">
+            <Button className="btn-outline-hero w-full mb-4" asChild>
+              <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">🛍️ Order Online</a>
+            </Button>
+            <p className="text-sm text-muted-foreground">Order through delivery apps</p>
+          </div>
+          <div className="card-elevated text-center">
+            <Button className="btn-outline-hero w-full mb-4" asChild>
+              <a href="https://maps.google.com/?q=123+Main+Street+Malad+West+Mumbai" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+            </Button>
+            <p className="text-sm text-muted-foreground">Navigate to our location</p>
           </div>
         </div>
       </div>
