@@ -85,14 +85,14 @@ const ContactSection = () => {
             <div className="card-elevated text-center">
               <h3 className="heading-tertiary mb-4">Quick Actions</h3>
               <div className="space-y-4">
-                <Button className="btn-hero w-full">
-                  📞 Call for Reservation
+                <Button className="btn-hero w-full" asChild>
+                  <a href="tel:+919876543210">📞 Call for Reservation</a>
                 </Button>
-                <Button className="btn-outline-hero w-full">
-                  🛍️ Order Online
+                <Button className="btn-outline-hero w-full" asChild>
+                  <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">🛍️ Order Online</a>
                 </Button>
-                <Button className="btn-outline-hero w-full">
-                  📍 Get Directions
+                <Button className="btn-outline-hero w-full" asChild>
+                  <a href="https://maps.google.com/?q=123+Main+Street+Malad+West+Mumbai" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
                 </Button>
               </div>
             </div>
@@ -118,14 +118,14 @@ const ContactSection = () => {
             <div className="card-elevated text-center">
               <h3 className="heading-tertiary mb-4">Follow Us</h3>
               <div className="flex justify-center space-x-4">
-                <Button variant="outline" size="sm" className="rounded-full">
-                  📘 Facebook
+                <Button variant="outline" size="sm" className="rounded-full" asChild>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
                 </Button>
-                <Button variant="outline" size="sm" className="rounded-full">
-                  📷 Instagram
+                <Button variant="outline" size="sm" className="rounded-full" asChild>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
                 </Button>
-                <Button variant="outline" size="sm" className="rounded-full">
-                  🐦 Twitter
+                <Button variant="outline" size="sm" className="rounded-full" asChild>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
                 </Button>
               </div>
             </div>

@@ -54,8 +54,9 @@ const WeServeSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div
+            <a
               key={category.title}
+              href="/menu"
               className="service-card group cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -80,7 +81,7 @@ const WeServeSection = () => {
                   Explore Menu →
                 </span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

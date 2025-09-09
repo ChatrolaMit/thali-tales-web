@@ -20,14 +20,14 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="btn-hero">
-                View Menu
+              <Button className="btn-hero" asChild>
+                <a href="/menu">View Menu</a>
               </Button>
-              <Button className="btn-outline-hero">
-                Order Online
+              <Button className="btn-outline-hero" asChild>
+                <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">Order Online</a>
               </Button>
-              <Button className="btn-outline-hero">
-                Book a Table
+              <Button className="btn-outline-hero" asChild>
+                <a href="tel:+919876543210">Book a Table</a>
               </Button>
             </div>
           </div>
