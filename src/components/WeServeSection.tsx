@@ -1,41 +1,41 @@
-import vegStarters from "@/assets/veg-starters.jpg";
-import mainCourse from "@/assets/main-course.jpg";
-import northIndian from "@/assets/north-indian.jpg";
-import southIndian from "@/assets/south-indian.jpg";
-import chineseSpecial from "@/assets/chinese-special.jpg";
-import dessertsBeverages from "@/assets/desserts-beverages.jpg";
+import sevtomato from "@/assets/sevtomato.jpg";
+import kaju_lasan from "@/assets/kaju_lasan.jpg";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
+import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import kaju_paneer from "@/assets/kaju_paneer.jpg";
 
 const WeServeSection = () => {
   const categories = [
     {
-      title: "Veg Starters",
-      image: vegStarters,
-      description: "Crispy appetizers and mouth-watering starters"
+      title: "Sev Tomato",
+      image: sevtomato,
+      description: "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic."
     },
     {
-      title: "Main Course Gravy",
-      image: mainCourse,
-      description: "Rich curries and flavorful gravies"
+      title: "Kaju Lasan",
+      image: kaju_lasan,
+      description: "Creamy cashew-based curry infused with garlic and rich spices."
     },
     {
-      title: "North Indian Dishes",
-      image: northIndian,
-      description: "Traditional North Indian specialties"
+      title: "Special Vagharelo Rotlo",
+      image: vagharelo_rotlo,
+      description: "A rustic Kathiyawadi delight — mashed rotlo tempered with spices and ghee."
     },
     {
-      title: "Special South Indian",
-      image: southIndian,
-      description: "Authentic South Indian delicacies"
+      title: "Paneer Butter Masala",
+      image: paneer_butter_masala,
+      description: "A creamy, buttery curry with tender paneer cubes simmered in rich tomato gravy."
     },
     {
-      title: "Chinese Specialities",
-      image: chineseSpecial,
-      description: "Indo-Chinese fusion favorites"
+      title: "Kaju Gathiya",
+      image: kaju_gathiya,
+      description: "A Kathiyawadi favorite made with crunchy gathiya cooked in a rich cashew gravys"
     },
     {
-      title: "Desserts & Beverages",
-      image: dessertsBeverages,
-      description: "Sweet endings and refreshing drinks"
+      title: "Kaju Paneer",
+      image: kaju_paneer,
+      description: "A royal curry blending soft paneer and cashews in a creamy, flavorful sauce."
     }
   ];
 
@@ -44,11 +44,11 @@ const WeServeSection = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="heading-secondary text-gradient">
-            We Serve
+            Customer Favorites
           </h2>
           <p className="text-large max-w-2xl mx-auto">
-            Discover our carefully curated menu featuring the finest vegetarian dishes 
-            from across India and beyond
+             Experience the taste of our signature Kathiyawadi and Indian favorites, 
+              prepared with fresh ingredients and timeless recipes.
           </p>
         </div>
 

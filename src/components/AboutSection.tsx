@@ -1,4 +1,4 @@
-import riceBowl from "@/assets/rice-bowl.jpg";
+import about from "@/assets/about.jpeg";
 
 const AboutSection = () => {
   return (
@@ -9,9 +9,10 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-medium">
               <img
-                src={riceBowl}
+                src={about}
                 alt="Fresh aromatic basmati rice"
-                className="w-full h-80 lg:h-96 object-cover"
+                className="w-full h-[400px] lg:h-[600px] object-cover"
+
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>

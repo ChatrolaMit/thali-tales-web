@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,10 +24,10 @@ const Header = () => {
     <header className="bg-card shadow-soft sticky top-0 z-50">
       <div className="section-container">
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
+           <img  src={logo} alt="Tulsi Kathiyawadi Logo" className="h-12 w-auto"  />
           <div className="flex items-center">
             <h1 className="text-2xl lg:text-3xl font-bold text-primary font-heading">
-              Pure Veg Cuisine
+              Tulsi Kathiyawadi
             </h1>
           </div>
 

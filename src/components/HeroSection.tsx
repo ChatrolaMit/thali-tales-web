@@ -9,7 +9,7 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-left space-y-8">
             <h1 className="text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight font-heading">
-              Pure Veg Cuisine
+              Tulsi Kathiyawadi
             </h1>
             <p className="text-2xl lg:text-3xl text-primary-foreground/90 font-medium">
               For A Perfect Dinner

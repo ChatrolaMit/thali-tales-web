@@ -28,10 +28,10 @@ const GallerySection = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="heading-secondary text-gradient">
-            Food Gallery
+            Flavors on Display
           </h2>
           <p className="text-large max-w-2xl mx-auto">
-            A visual feast of our delicious vegetarian creations
+            Experience the richness of Kathiyawadi cuisine, visually
           </p>
         </div>
 

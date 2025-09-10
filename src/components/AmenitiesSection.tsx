@@ -1,11 +1,11 @@
-import { Truck, ShoppingBag, CreditCard, Wifi, PartyPopper } from "lucide-react";
+import { UtensilsCrossed, ShoppingBag, CreditCard, Wifi, PartyPopper } from "lucide-react";
 
 const AmenitiesSection = () => {
   const amenities = [
     {
-      icon: Truck,
-      title: "Home Delivery",
-      description: "Fresh food delivered to your doorstep"
+      icon: UtensilsCrossed,
+      title: "Dine-In Experience",
+      description: "Enjoy authentic Kathiyawadi food in a cozy ambience."
     },
     {
       icon: ShoppingBag,
