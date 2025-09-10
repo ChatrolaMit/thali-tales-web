@@ -17,7 +17,7 @@ const TopBar = () => {
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4" />
-              <span>Malad West, Mumbai</span>
+              <span>23 Meriton Place, Clayton South, APAC 3169</span>
             </div>
           </div>
           

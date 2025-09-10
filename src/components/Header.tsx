@@ -24,8 +24,9 @@ const Header = () => {
     <header className="bg-card shadow-soft sticky top-0 z-50">
       <div className="section-container">
         <div className="flex items-center justify-between py-4">
-           <img  src={logo} alt="Tulsi Kathiyawadi Logo" className="h-12 w-auto"  />
+           
           <div className="flex items-center">
+            <img  src={logo} alt="Tulsi Kathiyawadi Logo" className="h-12 w-auto"  />
             <h1 className="text-2xl lg:text-3xl font-bold text-primary font-heading">
               Tulsi Kathiyawadi
             </h1>
