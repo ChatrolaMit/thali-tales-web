@@ -26,9 +26,6 @@ const HeroSection = () => {
               <Button className="btn-outline-hero" asChild>
                 <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">Order Online</a>
               </Button>
-              <Button className="btn-outline-hero" asChild>
-                <a href="tel:+919876543210">Book a Table</a>
-              </Button>
             </div>
           </div>
 

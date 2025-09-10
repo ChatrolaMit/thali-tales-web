@@ -5,11 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ShoppingCart, Plus } from "lucide-react";
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState("sabji");
-  const [cart, setCart] = useState<{[key: string]: number}>({});
 
   const categories = [
     { id: "sabji", name: "Sabji", label: "Vegetables" },
@@ -114,16 +112,6 @@ const Menu = () => {
     ]
   };
 
-  const addToCart = (itemId: string) => {
-    setCart(prev => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + 1
-    }));
-  };
-
-  const getTotalItems = () => {
-    return Object.values(cart).reduce((sum, count) => sum + count, 0);
-  };
 
   return (
     <div className="min-h-screen">
@@ -196,13 +184,6 @@ const Menu = () => {
                       
                       <div className="space-y-4">
                         <span className="text-2xl font-bold text-primary">{item.price}</span>
-                        <Button 
-                          onClick={() => addToCart(item.id)}
-                          className="flex items-center gap-2 w-full md:w-auto"
-                        >
-                          <Plus className="h-4 w-4" />
-                          Add to Cart
-                        </Button>
                       </div>
                     </div>
                     
@@ -222,18 +203,6 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* Floating Cart Button */}
-      {getTotalItems() > 0 && (
-        <div className="fixed bottom-6 right-6 z-50">
-          <Button size="lg" className="rounded-full shadow-lg relative">
-            <ShoppingCart className="h-5 w-5 mr-2" />
-            Cart ({getTotalItems()})
-            <Badge className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground">
-              {getTotalItems()}
-            </Badge>
-          </Button>
-        </div>
-      )}
 
       <Footer />
     </div>
