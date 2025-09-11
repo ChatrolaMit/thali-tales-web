@@ -1,26 +1,34 @@
 import { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
-import vegStarters from "@/assets/veg-starters.jpg";
-import mainCourse from "@/assets/main-course.jpg";
-import northIndian from "@/assets/north-indian.jpg";
-import southIndian from "@/assets/south-indian.jpg";
-import chineseSpecial from "@/assets/chinese-special.jpg";
-import dessertsBeverages from "@/assets/desserts-beverages.jpg";
-import heroThali from "@/assets/hero-thali.jpg";
-import riceBowl from "@/assets/rice-bowl.jpg";
+import kaju_lasan from "@/assets/kaju_lasan.jpg";
+import sukhadi from "@/assets/sukhadi.jpeg";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
+import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
+import mango_ras from "@/assets/mango_ras.jpeg";
+import barja_rotlo_churmo from "@/assets/barja_rotlo_churmo.jpeg";
+import sevtomato from "@/assets/sevtomato.jpg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import kadhi from "@/assets/kadhi.jpeg";
+import kaju_paneer from "@/assets/kaju_paneer.jpg";
+import plain_khichdi from "@/assets/plain_khichdi.jpeg";
+import jeera_rice from "@/assets/jeera_rice.jpeg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: heroThali, alt: "Traditional Indian Thali", category: "Thali" },
-    { src: vegStarters, alt: "Vegetarian Starters", category: "Starters" },
-    { src: mainCourse, alt: "Main Course Curries", category: "Main Course" },
-    { src: northIndian, alt: "North Indian Specialties", category: "North Indian" },
-    { src: southIndian, alt: "South Indian Dishes", category: "South Indian" },
-    { src: chineseSpecial, alt: "Chinese Specialties", category: "Chinese" },
-    { src: dessertsBeverages, alt: "Desserts & Beverages", category: "Desserts" },
-    { src: riceBowl, alt: "Aromatic Rice", category: "Rice Dishes" }
+    { src: sevtomato, alt: "Sev Tomato", category: "Curries Kathiyawadi Ramzat" },
+    { src: sukhadi, alt: "Sukhadi", category: "Sweets" },
+    { src: kaju_lasan, alt: "Kaju Lasan", category: "Curries Kathiyawadi Ramzat" },
+    { src: vagharelo_rotlo, alt: "Special Vagharelo Rotlo", category: "Starters Swad Ni Saruat" },
+    { src: paneer_butter_masala, alt: "Paneer Butter Masala", category: "Cheese Paneer Dhamaal" },
+    { src: mango_ras, alt: "Mango Ras", category: "Sweets" },
+    { src: barja_rotlo_churmo, alt: "Barja Rotlo Churmo", category: "Sweets" },
+    { src: kaju_gathiya, alt: "Kaju Gathiya", category: "Curries Kathiyawadi Ramzat" },
+    { src: kadhi, alt: "Kadhi", category: "Rice Ni Lijjat" },
+    { src: kaju_paneer, alt: "Kaju Paneer", category: "Cheese Paneer Dhamaal" },
+    { src: plain_khichdi, alt: "Plain Khichdi", category: "Rice Ni Lijjat" },
+    { src: jeera_rice, alt: "Jeera Rice", category: "Rice Ni Lijjat" },
   ];
 
   return (

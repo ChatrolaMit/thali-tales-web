@@ -5,7 +5,7 @@ const AmenitiesSection = () => {
     {
       icon: UtensilsCrossed,
       title: "Dine-In Experience",
-      description: "Enjoy authentic Kathiyawadi food in a cozy ambience."
+      description: "Enjoy authentic Kathiyawadi food"
     },
     {
       icon: ShoppingBag,
@@ -37,7 +37,7 @@ const AmenitiesSection = () => {
             Our Amenities
           </h2>
           <p className="text-large max-w-2xl mx-auto">
-            We provide modern conveniences to enhance your dining experience
+            We provide modern conveniences to enhance your experience
           </p>
         </div>
 

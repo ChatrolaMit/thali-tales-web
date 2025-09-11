@@ -10,22 +10,22 @@ const WeServeSection = () => {
     {
       title: "Sev Tomato",
       image: sevtomato,
-      description: "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic."
+      description: "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic"
     },
     {
       title: "Kaju Lasan",
       image: kaju_lasan,
-      description: "Creamy cashew-based curry infused with garlic and rich spices."
+      description: "Creamy cashew-based curry infused with garlic and rich spices"
     },
     {
       title: "Special Vagharelo Rotlo",
       image: vagharelo_rotlo,
-      description: "A rustic Kathiyawadi delight — mashed rotlo tempered with spices and ghee."
+      description: "A rustic Kathiyawadi delight — mashed rotlo tempered with spices and ghee"
     },
     {
       title: "Paneer Butter Masala",
       image: paneer_butter_masala,
-      description: "A creamy, buttery curry with tender paneer cubes simmered in rich tomato gravy."
+      description: "A creamy, buttery curry with tender paneer cubes simmered in rich tomato gravy"
     },
     {
       title: "Kaju Gathiya",
@@ -35,7 +35,7 @@ const WeServeSection = () => {
     {
       title: "Kaju Paneer",
       image: kaju_paneer,
-      description: "A royal curry blending soft paneer and cashews in a creamy, flavorful sauce."
+      description: "A royal curry blending soft paneer and cashews in a creamy, flavorful sauce"
     }
   ];
 
