@@ -40,7 +40,7 @@ const WeServeSection = () => {
   ];
 
   return (
-    <section id="serve" className="section-spacing bg-background">
+    <section id="serve" className="bg-background">
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="heading-secondary text-gradient">

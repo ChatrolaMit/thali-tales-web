@@ -5,79 +5,78 @@ import { Badge } from "@/components/ui/badge";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import rosted_papad from "@/assets/rostad_papad.jpeg";
+import bajra_rotlo from "@/assets/bajra_rotlo.jpg";
+import roti from "@/assets/roti.jpg";
+import sevtomato from "@/assets/sevtomato.jpg";
+import kaju_lasan from "@/assets/kaju_lasan.jpg";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
+import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import kaju_paneer from "@/assets/kaju_paneer.jpg";
+import masala_papad from "@/assets/masala_papad.jpeg";
+
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState("sabji");
+  const [activeCategory, setActiveCategory] = useState("starters_swad_ni_saruat");
 
   const categories = [
-    { id: "sabji", name: "Sabji", label: "Vegetables" },
-    { id: "rotla", name: "Rotla", label: "Breads" },
+    { id: "starters_swad_ni_saruat", name: "Starters Swad Ni Saruat", label: "Starters Swad Ni Saruat" },
+    { id: "rotla", name: "Roti Rotlo", label: "Roti Rotlo" },
     { id: "rice", name: "Rice", label: "Rice Dishes" },
   ];
 
   const menuItems = {
-    sabji: [
+    starters_swad_ni_saruat: [
       {
         id: "1",
-        name: "Aloo Gobi",
-        description: "Fresh cauliflower and potatoes cooked with turmeric, cumin, coriander, garam masala, and fresh herbs",
-        price: "₹180",
-        image: "/api/placeholder/300/200",
+        name: "Special Vagharelo Rotlo",
+        description: "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
+        price: "$18.99",
+        image: vagharelo_rotlo,
         popular: true
       },
       {
         id: "2", 
-        name: "Paneer Butter Masala",
-        description: "Soft paneer cubes in rich tomato-based gravy with butter, cream, cashews, and aromatic spices",
-        price: "₹250",
-        image: "/api/placeholder/300/200",
-        popular: true
+        name: "Masala Papad",
+        description: "Thin, crispy flatbread flavoured with aromatic spices.",
+        price: "$6.00",
+        image: masala_papad,
+        
       },
       {
         id: "3",
-        name: "Dal Tadka",
-        description: "Yellow lentils tempered with mustard seeds, cumin, garlic, onions, and fresh cilantro",
-        price: "₹160",
-        image: "/api/placeholder/300/200"
+        name: "Roasted Papad",
+        description: "Thin, crispy papad roasted to perfection.",
+        price: "$3.50",
+        image: rosted_papad
       },
       {
         id: "4",
-        name: "Bhindi Masala",
+        name: "Gud Ghee",
         description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
         price: "₹170",
-        image: "/api/placeholder/300/200"
+        // image: "/api/placeholder/300/200",
+        popular: true
       }
     ],
     rotla: [
       {
         id: "5",
-        name: "Butter Naan",
-        description: "Soft leavened bread brushed with butter and baked fresh in tandoor oven",
-        price: "₹60",
-        image: "/api/placeholder/300/200",
+        name: "Ghee Bajra Rotlo",
+        description: "Traditional Gujarati flatbread made with ghee and bajra flour",
+        price: "$6.00",
+        image: bajra_rotlo,
         popular: true
       },
       {
         id: "6",
-        name: "Garlic Naan", 
-        description: "Naan bread topped with fresh minced garlic, cilantro, and butter",
-        price: "₹70",
-        image: "/api/placeholder/300/200"
+        name: "Gee Fulka Roti", 
+        description: "Traditional Gujarati flatbread",
+        price: "$4.00",
+        image: roti
       },
-      {
-        id: "7",
-        name: "Tandoori Roti",
-        description: "Whole wheat flatbread cooked in tandoor, served hot with butter",
-        price: "₹40",
-        image: "/api/placeholder/300/200"
-      },
-      {
-        id: "8",
-        name: "Laccha Paratha",
-        description: "Flaky layered bread made with whole wheat flour, ghee, and cooked on tawa",
-        price: "₹50",
-        image: "/api/placeholder/300/200"
-      }
+      
     ],
     rice: [
       {
