@@ -152,9 +152,7 @@ const RestaurantLanding = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="pt-4"
                 >
-                  <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-medium">
-                    Explore
-                  </button>
+                 
                 </motion.div>
               </motion.div>
 

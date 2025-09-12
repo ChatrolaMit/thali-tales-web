@@ -6,8 +6,17 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import rosted_papad from "@/assets/rostad_papad.jpeg";
+import jeera_rice from "@/assets/jeera_rice.jpeg";
 import bajra_rotlo from "@/assets/bajra_rotlo.jpg";
+import ghee_gud from "@/assets/ghee_gud.jpg";
 import roti from "@/assets/roti.jpg";
+import plain_khichdi from "@/assets/plain_khichdi.jpeg";
+import kadhi from "@/assets/kadhi.jpeg";
+import rice from "@/assets/rice.jpg";
+import paneer_lasagna from "@/assets/paneer_lasagna.png";
+import palak_paneer from "@/assets/palak_paneer.png";
+import chess_butter_masala from "@/assets/chess_butter_masala.png";
+import kaju_curry from "@/assets/kaju_curry.png";
 import sevtomato from "@/assets/sevtomato.jpg";
 import kaju_lasan from "@/assets/kaju_lasan.jpg";
 import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
@@ -23,7 +32,8 @@ const Menu = () => {
   const categories = [
     { id: "starters_swad_ni_saruat", name: "Starters Swad Ni Saruat", label: "Starters Swad Ni Saruat" },
     { id: "rotla", name: "Roti Rotlo", label: "Roti Rotlo" },
-    { id: "rice", name: "Rice", label: "Rice Dishes" },
+    { id: "rice", name: "Rice Ni Lijjat", label: "Rice Ni Lijjat" },
+    { id: "cheese_paneer_dhamaal", name: "Cheese Paneer Dhamaal", label: "Cheese Paneer Dhamaal" },
   ];
 
   const menuItems = {
@@ -56,7 +66,7 @@ const Menu = () => {
         name: "Gud Ghee",
         description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
         price: "₹170",
-        // image: "/api/placeholder/300/200",
+        image: ghee_gud ,
         popular: true
       }
     ],
@@ -81,33 +91,87 @@ const Menu = () => {
     rice: [
       {
         id: "9",
-        name: "Vegetable Biryani",
-        description: "Fragrant basmati rice cooked with mixed vegetables, saffron, mint, and traditional biryani spices",
-        price: "₹220",
-        image: "/api/placeholder/300/200",
-        popular: true
+        name: "Jeera Rice",
+        description: "Flavourful rice infused with cumin seeds",
+        price: "$10.00",
+        image: jeera_rice,
+        
       },
       {
         id: "10",
-        name: "Jeera Rice",
-        description: "Aromatic basmati rice cooked with cumin seeds, ghee, and whole spices",
-        price: "₹140",
-        image: "/api/placeholder/300/200"
+        name: "Plain Khichdi",
+        description: "Traditional Gujarati comfort food made with rice and lentils",
+        price: "$12.00",
+        image: plain_khichdi,
+        popular: true
       },
       {
         id: "11",
-        name: "Lemon Rice",
-        description: "South Indian style rice tempered with mustard seeds, curry leaves, turmeric, and fresh lemon",
-        price: "₹130",
-        image: "/api/placeholder/300/200"
+        name: "Kadhi",
+        description: "Traditional Gujarati yogurt-based curry",
+        price: "$12.00",
+        image: kadhi
       },
       {
         id: "12",
-        name: "Curd Rice",
-        description: "Comfort food with rice mixed in fresh yogurt, tempered with mustard seeds and curry leaves",
-        price: "₹120",
-        image: "/api/placeholder/300/200"
+        name: "Plain Rice",
+        description: "Soft, fluffy steamed white rice",
+        price: "$7.00",
+        image: rice
       }
+    ],
+    cheese_paneer_dhamaal: [
+      {
+        id: "13",
+        name: "Paneer Butter Masala",
+        description: "Rich and creamy paneer in a smooth buttery sauce",
+        price: "$16.99",
+        image: paneer_butter_masala,
+        
+      },
+      {
+        id: "14",
+        name: "Kaju Paneer",
+        description: "Rich and creamy paneer in a cashew nut gravy",
+        price: "$20.00",
+        image: kaju_paneer,
+        popular: true
+      },
+      {
+        id: "15",
+        name: "Paneer Takatak",
+        description: "Indian-style cheese curry with paneer",
+        price: "$19.99",
+        image: kadhi
+      },
+      {
+        id: "16",
+        name: "Paneer Lasaniya",
+        description: "Rich and creamy paneer in a flavorful sauce",
+        price: "$16.99",
+        image: paneer_lasagna
+      },
+       {
+        id: "17",
+        name: "Palak Paneer",
+        description: "Creamy spinach curry with paneer",
+        price: "$16.99",
+        image: palak_paneer
+      },
+      {
+        id: "18",
+        name: "Cheese Butter Masala",
+        description: "Rich and creamy paneer in a buttery masala sauce",
+        price: "$18.00",
+        image: chess_butter_masala
+      },
+       {
+        id: "19",
+        name: "Kaju Curry",
+        description: "Rich and creamy curry made with cashews and paneer",
+        price: "$18.00",
+        image: kaju_curry
+      },
     ]
   };
 

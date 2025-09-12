@@ -22,7 +22,7 @@ const thalis: Thali[] = [
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
     price: 40,
-    rating: 4.8,
+    rating: 3.9,
   },
   {
     id: 2,
