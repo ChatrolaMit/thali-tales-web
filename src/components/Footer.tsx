@@ -41,7 +41,6 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Our Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>🚚 Home Delivery</li>
               <li>🥡 Take Away</li>
               <li>🎉 Party Orders</li>
               <li>💳 Online Payment</li>
@@ -55,7 +54,7 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm">Malad West, Mumbai</span>
+                <span className="text-sm">23 Meriton Place, Clayton South, APAC 3169</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />

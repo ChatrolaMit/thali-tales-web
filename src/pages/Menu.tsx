@@ -24,6 +24,22 @@ import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
 import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 import masala_papad from "@/assets/masala_papad.jpeg";
+import bharela_papad from "@/assets/bharela_papad.jpeg";
+import sev_lasaniya from "@/assets/sev_lasaniya.jpg";
+import sev_lasaniya_1 from "@/assets/sev_lasaniya_1.jpg";
+import chana_masala from "@/assets/chana_masala.jpg";
+import ringan_bharthu from "@/assets/ringan_bharthu.jpg";
+import lasaniya_batata from "@/assets/lasaniya_batata.jpg";
+import bharela_ringan from "@/assets/bharela_ringan.jpg";
+import surti_undhiyu from "@/assets/surti_undhiyu.jpg";
+import dal_fry from "@/assets/dal_fry.jpg";
+import butter_dal_tadka from "@/assets/butter_dal_tadka_fry.jpg";
+import sukhadi from "@/assets/sukhadi.jpeg";
+import gulab_jambun from "@/assets/gulab_jambun.jpeg";
+import mango_ras from "@/assets/mango_ras.jpeg";
+import barja_rotlo_churmo from "@/assets/barja_rotlo_churmo.jpeg";
+import chas from "@/assets/chas.jpeg";
+import lasai from "@/assets/lasai.jpeg";
 
 
 const Menu = () => {
@@ -34,6 +50,10 @@ const Menu = () => {
     { id: "rotla", name: "Roti Rotlo", label: "Roti Rotlo" },
     { id: "rice", name: "Rice Ni Lijjat", label: "Rice Ni Lijjat" },
     { id: "cheese_paneer_dhamaal", name: "Cheese Paneer Dhamaal", label: "Cheese Paneer Dhamaal" },
+    { id: "curries_kathiyawadi_ramzat", name: "Curries Kathiyawadi Ramzat", label: "Curries Kathiyawadi Ramzat" },
+    { id: "dal_ni_kamal", name: "Dal Ni Kamal", label: "Dal Ni Kamal" },
+    { id: "sweets", name: "Sweets", label: "Sweets" },
+    { id: "drinks", name: "Drinks", label: "Drinks" },
   ];
 
   const menuItems = {
@@ -65,7 +85,7 @@ const Menu = () => {
         id: "4",
         name: "Gud Ghee",
         description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
-        price: "₹170",
+        price: "$5.00",
         image: ghee_gud ,
         popular: true
       }
@@ -172,7 +192,176 @@ const Menu = () => {
         price: "$18.00",
         image: kaju_curry
       },
-    ]
+    ],
+    curries_kathiyawadi_ramzat: [
+      {
+        id: "20",
+        name: "Sev Tomato",
+        description: "Tomato-based curry with a crunchy sev topping",
+        price: "$14.99",
+        image: sevtomato,
+         popular: true
+        
+      },
+      {
+        id: "21",
+        name: "Kaju Lasan",
+        description: "Rich cashew curry with a hint of garlic",
+        price: "$18.00",
+        image: kaju_lasan,
+        popular: true
+      },
+      {
+        id: "22",
+        name: "Kaju Gathiya",
+        description: "Indian-style cheese curry with paneer",
+        price: "$18.00",
+        image: kaju_gathiya
+      },
+      {
+        id: "23",
+        name: "Bharela Papad",
+        description: "Crispy papad filled with a flavorful mixture",
+        price: "$18.00",
+        image: bharela_papad
+      },
+       {
+        id: "24",
+        name: "Sev Lili Dungari Spring Onion",
+        description: "Crunchy sev and lili dungari in a flavorful spring onion curry",
+        price: "$16.99",
+        image: ""
+      },
+      {
+        id: "25",
+        name: "Sev Lasaniya",
+        description: "Spicy garlic curry topped with crunchy sev for a bold Kathiyawadi flavor",
+        price: "$14.99",
+        image: sev_lasaniya_1
+      },
+       {
+        id: "26",
+        name: "Dahi Gathiya",
+        description: "Yogurt-based curry with crunchy Gathiya bits",
+        price: "$17.00",
+        image: ""
+      },
+      {
+        id: "27",
+        name: "Desi Chana Masala",
+        description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
+        price: "$16.99",
+        image: chana_masala
+      },
+      {
+        id: "28",
+        name: "Ringan Bharthu",
+        description: "Roasted eggplant in a rich and tangy curry sauce",
+        price: "$20.00",
+        image: ringan_bharthu
+      },
+      {
+        id: "29",
+        name: "Lasaniya Bataka",
+        description: "Potato curry in a rich and creamy sauce",
+        price: "$16.99",
+        image: lasaniya_batata,
+        popular:true,
+      },
+      {
+        id: "30",
+        name: "Bharela Ringan",
+        description: "Ringan (eggplant) in a rich and flavorful Kathiyawadi curry",
+        price: "$18.00",
+        image: bharela_ringan,
+        popular:true,
+      },
+      {
+        id: "31",
+        name: "Surti Undhiyu",
+        description: "Mixed vegetables in a rich and flavorful curry sauce",
+        price: "$22.00",
+        image: surti_undhiyu,
+        popular:true,
+      },
+    ],
+    dal_ni_kamal: [
+      {
+        id: "32",
+        name: "Dal Fry",
+        description: "Toor dal tempered with ghee, onion, tomato, garlic, and spices",
+        price: "$16.99",
+        image: dal_fry,
+         
+        
+      },
+      {
+        id: "33",
+        name: "Butter Dal Tadka Fry",
+        description: "Rich and creamy lentil curry with a hint of butter",
+        price: "$18.00",
+        image: butter_dal_tadka,
+        
+      },
+      
+    ],
+    sweets: [
+      {
+        id: "34",
+        name: "Sukhadi",
+        description: "Three pieces",
+        price: "$8.00",
+        image: sukhadi,
+         
+        
+      },
+      {
+        id: "35",
+        name: "Gulab Jamun",
+        description: "Three pieces",
+        price: "$8.00",
+        image:gulab_jambun ,
+        
+      },
+      {
+        id: "36",
+        name: "Mango Ras",
+        description: "Sweet and creamy dessert made with mango",
+        price: "$7.99",
+        image:mango_ras ,
+        
+      },
+      {
+        id: "37",
+        name: "Barja Rotlo Churmo",
+        description: "Traditional Gujarati sweet treat made with rotlo and churma",
+        price: "$8.00",
+        image:barja_rotlo_churmo ,
+        
+      },
+      
+    ],
+    drinks: [
+      {
+        id: "34",
+        name: "Masala Chaas",
+        description: "A refreshing yogurt-based drink with a blend of spices",
+        price: "$5.00",
+        image: chas,
+        popular: true,
+         
+        
+      },
+      {
+        id: "35",
+        name: "Lassi",
+        description: "Traditional yogurt-based drink from India, smooth and creamy",
+        price: "$8.00",
+        image:lasai ,
+        
+      },
+    
+    ],
   };
 
 
