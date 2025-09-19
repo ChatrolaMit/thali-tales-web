@@ -139,12 +139,12 @@ const RestaurantLanding = () => {
                   </div>
                 )}
 
-                <div className="pt-6">
+                {/* <div className="pt-6">
                   <ThaliSelector
                     selectedThali={selectedThali}
                     onThaliSelect={setSelectedThali}
                   />
-                </div>
+                </div> */}
 
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

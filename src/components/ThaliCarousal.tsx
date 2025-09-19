@@ -4,6 +4,7 @@ import kadhi from "@/assets/kadhi.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 import plain_khichdi from "@/assets/plain_khichdi.jpeg";
 import jeera_rice from "@/assets/jeera_rice.jpeg";
+import { useEffect } from "react";
 
 interface Thali {
   id: number;
@@ -64,13 +65,40 @@ const ThaliCarousel = ({
 }: ThaliCarouselProps) => {
   const currentThali =
     thalis.find((thali) => thali.id === selectedThali) || thalis[0];
-  const rotationAngle = (selectedThali + 1) * -90; // Each thali is 90 degrees apart
+  const rotationAngle = (selectedThali + 1) * -90;
   const radius = 350; // Adjust as needed for spacing
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextId = (selectedThali % thalis.length) + 1;
+      onThaliSelect(nextId);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [selectedThali, onThaliSelect]);
 
   return (
     <div className="w-full h-full flex items-center justify-center">
       {/* Circular Carousel Container */}
       <div className="relative w-[600px] h-[600px]">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* Outer metallic rim */}
+          <div
+            className="rounded-full border-[50px] border-gray-900 shadow-2xl flex items-center justify-center"
+            style={{
+              width: `${radius * 2.2}px`,
+              height: `${radius * 2.2}px`,
+            }}
+          >
+            <div
+              className="rounded-full border-gray-800"
+              style={{
+                width: `${radius * 2}px`,
+                height: `${radius * 2}px`,
+              }}
+            />
+          </div>
+        </div>
         {/* Rotating Circle */}
         <motion.div
           className="absolute inset-0"
@@ -93,7 +121,9 @@ const ThaliCarousel = ({
               <motion.div
                 key={thali.id}
                 className={`absolute ${
-                  isSelected ? "w-[400px] h-[400px]" : "w-[200px] h-[200px] opacity-40"
+                  isSelected
+                    ? "w-[400px] h-[400px]"
+                    : "w-[200px] h-[200px] blur-sm"
                 }`}
                 style={{
                   left: `calc(50% + ${x}px - ${offset}px)`,
@@ -107,9 +137,12 @@ const ThaliCarousel = ({
               >
                 {/* Plate Container */}
                 <div
-                  className="relative w-full h-full"
+                  className="relative w-full h-full cursor-pointer"
                   onClick={() => onThaliSelect(thali.id)}
                 >
+                  {/* Thick Black Circular Border Behind Plate */}
+                  <div className="absolute inset-0 rounded-full bg-black border-8 border-black" />
+
                   {/* Plate Shadow */}
                   <div className="absolute inset-2 rounded-full bg-black/20 blur-xl" />
 
