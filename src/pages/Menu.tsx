@@ -386,21 +386,21 @@ const Menu = () => {
 
       {/* Menu Navigation */}
       <section className="py-8 border-b border-border bg-card/50">
-        <div className="section-container">
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <Button
-                key={category.id}
-                variant={activeCategory === category.id ? "default" : "outline"}
-                onClick={() => setActiveCategory(category.id)}
-                className="min-w-[120px]"
-              >
-                {category.name}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="section-container">
+    <div className="flex justify-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar">
+      {categories.map((category) => (
+        <Button
+          key={category.id}
+          variant={activeCategory === category.id ? "default" : "outline"}
+          onClick={() => setActiveCategory(category.id)}
+          className="min-w-[120px]"
+        >
+          {category.name}
+        </Button>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Menu Items */}
       <section className="py-12">

@@ -18,7 +18,7 @@ interface Thali {
 const thalis: Thali[] = [
   {
     id: 1,
-    name: "Bengali Thali",
+    name: "Sev Tomato",
     image: kadhi,
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
@@ -52,6 +52,7 @@ const thalis: Thali[] = [
     price: 35,
     rating: 4.6,
   },
+  
 ];
 
 interface ThaliCarouselProps {

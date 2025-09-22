@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import HeroContent from "./HeroContent";
-import ThaliSelector from "./ThaliSelector";
+// import ThaliSelector from "./ThaliSelector";
 import ThaliCarousel from "./ThaliCarousal";
 import { Button } from "./ui/button";
 import { Star } from "lucide-react";
@@ -56,6 +56,7 @@ const thalis: Thali[] = [
     price: 35,
     rating: 4.6,
   },
+ 
 ];
 
 const RestaurantLanding = () => {
