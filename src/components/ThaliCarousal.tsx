@@ -78,6 +78,7 @@ const ThaliCarousel = ({
     return () => clearInterval(interval);
   }, [selectedThali, onThaliSelect]);
 
+  
   return (
     <div className="w-full h-full flex items-center justify-center">
       {/* Circular Carousel Container */}

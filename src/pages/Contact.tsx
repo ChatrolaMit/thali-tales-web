@@ -52,9 +52,9 @@ const Contact = () => {
                   <div>
                     <h3 className="heading-tertiary">Visit Us</h3>
                     <p className="text-muted-foreground">
-                      123 Main Street, Malad West<br />
-                      Mumbai, Maharashtra 400064<br />
-                      India
+                    23 Meriton Place, <br />
+                      Clayton South, APAC 3169<br />
+                      
                     </p>
                   </div>
                 </div>
@@ -98,9 +98,9 @@ const Contact = () => {
                   <div>
                     <h3 className="heading-tertiary">Opening Hours</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Monday - Sunday: 11:00 AM - 10:30 PM</p>
-                      <p>Lunch: 11:00 AM - 3:00 PM</p>
-                      <p>Dinner: 6:00 PM - 10:30 PM</p>
+                      <p>Monday - Friday: 5:00 PM - 12:00 PM</p>
+                      <p>Saturday - Sunday: 6:00 PM - 11:30 PM</p>
+                      <p>Dinner: 5:00 PM - 12:00 PM</p>
                     </div>
                   </div>
                 </div>

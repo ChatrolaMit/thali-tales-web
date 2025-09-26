@@ -4,7 +4,6 @@ import HeroContent from "./HeroContent";
 // import ThaliSelector from "./ThaliSelector";
 import ThaliCarousel from "./ThaliCarousal";
 import { Button } from "./ui/button";
-import { Star } from "lucide-react";
 import kadhi from "@/assets/kadhi.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 import plain_khichdi from "@/assets/plain_khichdi.jpeg";
@@ -56,7 +55,6 @@ const thalis: Thali[] = [
     price: 35,
     rating: 4.6,
   },
- 
 ];
 
 const RestaurantLanding = () => {
@@ -96,7 +94,7 @@ const RestaurantLanding = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-8"
               >
-                <div className="mt-8s">
+                {/* <div className="mt-8s">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                     {currentThali?.name}
                   </h1>
@@ -125,6 +123,43 @@ const RestaurantLanding = () => {
                       (2.5k reviews)
                     </span>
                   </div>
+                </div> */}
+                <div className="text-left space-y-8 mt-12">
+                  <h1
+                    className="text-5xl lg:text-7xl font-bold leading-tight font-heading"
+                    style={{ color: "hsl(120, 45%, 25%)" }}
+                  >
+                    Tulsi Kathiyawadi
+                  </h1>
+                  <p
+                    className="text-2xl lg:text-3xl font-medium"
+                    style={{ color: "hsl(120, 45%, 35%)" }}
+                  >
+                    For A Perfect Dinner
+                  </p>
+                  <p
+                    className="text-large max-w-2xl mx-auto"
+                    
+                  >
+                    Experience authentic vegetarian flavors crafted with love
+                    and tradition. Fresh ingredients, time-honored recipes, and
+                    a dining experience you'll cherish.
+                  </p>
+
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <Button className="btn-hero" asChild>
+                      <a href="/menu">View Menu</a>
+                    </Button>
+                    <Button className="btn-outline-hero" asChild>
+                      <a
+                        href="https://ubereats.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Order Online
+                      </a>
+                    </Button>
+                  </div>
                 </div>
 
                 {isMobile && (
@@ -152,9 +187,7 @@ const RestaurantLanding = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="pt-4"
-                >
-                 
-                </motion.div>
+                ></motion.div>
               </motion.div>
 
               <motion.div
