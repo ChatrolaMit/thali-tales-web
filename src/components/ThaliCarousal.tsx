@@ -109,7 +109,7 @@ const ThaliCarousel = ({ selectedThali, onThaliSelect }: ThaliCarouselProps) => 
           }}
         >
           {thalis.map((thali, index) => {
-            const angle = index * 90;
+            const angle = index * 90 + 180;
             const radian = (angle * Math.PI) / 180;
             const x = Math.cos(radian) * radius;
             const y = Math.sin(radian) * radius;
