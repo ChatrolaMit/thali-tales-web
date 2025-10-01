@@ -59,8 +59,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="heading-tertiary">Call Us</h3>
                   <p className="text-muted-foreground">
-                    +91 98765 43210<br />
-                    +91 98765 43211
+                    +61 492004534<br />
                   </p>
                 </div>
               </div>
@@ -224,7 +223,7 @@ const ContactSection = () => {
           </div>
           <div className="card-elevated text-center">
             <Button className="btn-outline-hero w-full mb-4" asChild>
-              <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer">🛍️ Order Online</a>
+              <a href="https://www.ubereats.com/au/store/tulsi-kathiyawadi/e3pWlBGWXkmZ5Gzr10puWQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlByZXN0b24lMjBNYXJrZXQlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0NmJhYjJmZi05ZDA4LWNmMjEtNTNiNS05M2RjNzY4YmE4YjUlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0zNy43Mzg5Nzk5JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTQ1LjAwMjAyNzIlN0Q%3D&ps=1&surfaceName=" target="_blank" rel="noopener noreferrer">🛍️ Order Online</a>
             </Button>
             <p className="text-sm text-muted-foreground">Order through delivery apps</p>
           </div>

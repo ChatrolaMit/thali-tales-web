@@ -6,35 +6,35 @@ const TestimonialsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const testimonials = [
-    {
-      name: "Priya Sharma",
-      location: "Malad West",
-      rating: 5,
-      text: "Absolutely amazing food! The flavors are authentic and remind me of home-cooked meals. The paneer makhani is to die for, and the service is always warm and welcoming.",
-      image: "👩‍💼"
-    },
-    {
-      name: "Rajesh Patel",
-      location: "Goregaon",
-      rating: 5,
-      text: "Pure Veg Cuisine has become our family's favorite restaurant. The quality is consistent, the prices are reasonable, and the variety of dishes is impressive. Highly recommended!",
-      image: "👨‍💻"
-    },
-    {
-      name: "Anita Gupta",
-      location: "Borivali",
-      rating: 5,
-      text: "The South Indian dishes here are exceptional! The dosas are crispy, the sambhar is flavorful, and the chutneys are perfect. A must-visit for authentic vegetarian cuisine.",
-      image: "👩‍🏫"
-    },
-    {
-      name: "Vikram Singh",
-      location: "Kandivali",
-      rating: 5,
-      text: "Excellent home delivery service! The food arrives hot and fresh every time. Their Chinese dishes are surprisingly good for a vegetarian restaurant. Great value for money.",
-      image: "👨‍🔧"
-    }
-  ];
+  {
+    name: "Priya Sharma",
+    location: "Richmond Hills",
+    rating: 5,
+    text: "Swad Ni Saruat was the perfect start to our meal! The flavors are authentic Kathiyawadi style, and the spices are just right. Loved the warm hospitality too!",
+    image: "👩‍💼"
+  },
+  {
+    name: "Rajesh Patel",
+    location: "Sunnyvale",
+    rating: 5,
+    text: "Cheese Paneer Dhamaal is a must-try! The creamy paneer and rich spices take you straight to Kathiyawad. Roti Rotlo and Rice Ni Lijjat complement it perfectly. Highly recommended!",
+    image: "👨‍💻"
+  },
+  {
+    name: "Anita Gupta",
+    location: "Maple Grove",
+    rating: 5,
+    text: "Dal Ni Kamal is simply outstanding! Every bite is full of authentic flavor. The Kathiyawadi Ramzat curry is another highlight. Sweets and drinks finish the meal beautifully.",
+    image: "👩‍🏫"
+  },
+  {
+    name: "Vikram Singh",
+    location: "Oakwood",
+    rating: 5,
+    text: "Excellent overall experience! The meal felt like home-cooked Kathiyawadi food. Loved the combination of Roti Rotlo, Rice Ni Lijjat, and the curries. Definitely coming back!",
+    image: "👨‍🔧"
+  }
+];
 
   useEffect(() => {
     const timer = setInterval(() => {

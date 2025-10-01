@@ -1,10 +1,10 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import kadhi from "@/assets/kadhi.jpeg";
-import kaju_paneer from "@/assets/kaju_paneer.jpg";
-import plain_khichdi from "@/assets/plain_khichdi.jpeg";
-import jeera_rice from "@/assets/jeera_rice.jpeg";
+import sevtomato from "@/assets/sevtomato.jpg";
+import sukhadi from "@/assets/sukhadi.jpeg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
 import { useEffect, useState } from "react";
 
 interface Thali {
@@ -20,37 +20,37 @@ const thalis: Thali[] = [
   {
     id: 1,
     name: "Sev Tomato",
-    image: kadhi,
+    image: sevtomato,
     description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 40,
-    rating: 3.9,
-  },
-  {
-    id: 2,
-    name: "Gujarati Thali",
-    image: kaju_paneer,
-    description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 50,
-    rating: 4.9,
-  },
-  {
-    id: 3,
-    name: "Punjabi Thali",
-    image: plain_khichdi,
-    description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 45,
+      "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic",
+    price: 18,
     rating: 4.7,
   },
   {
-    id: 4,
-    name: "South Indian Thali",
-    image: jeera_rice,
+    id: 2,
+    name: "Sukhadi",
+    image: sukhadi,
+    description:
+      "Three pieces",
+    price: 8,
+    rating: 4.5,
+  },
+  {
+    id: 3,
+    name: "Kaju Gathiya",
+    image: kaju_gathiya,
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 35,
+    price: 18,
+    rating: 4.3,
+  },
+  {
+    id: 4,
+    name: "Special Vagharelo Rotlo",
+    image: vagharelo_rotlo,
+    description:
+      "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
+    price: 18.99,
     rating: 4.6,
   },
 ];
@@ -171,7 +171,7 @@ const ThaliCarousel = ({ selectedThali, onThaliSelect }: ThaliCarouselProps) => 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="absolute bottom-40 right-[470px] bg-background/95 backdrop-blur-sm rounded-2xl p-4 shadow-[var(--thumbnail-shadow)] border border-border"
+          className="absolute bottom-24 right-[470px] bg-background/95 backdrop-blur-sm rounded-2xl p-4 shadow-[var(--thumbnail-shadow)] border border-border"
         >
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 rounded-full overflow-hidden">

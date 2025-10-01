@@ -4,10 +4,10 @@ import HeroContent from "./HeroContent";
 // import ThaliSelector from "./ThaliSelector";
 import ThaliCarousel from "./ThaliCarousal";
 import { Button } from "./ui/button";
-import kadhi from "@/assets/kadhi.jpeg";
-import kaju_paneer from "@/assets/kaju_paneer.jpg";
-import plain_khichdi from "@/assets/plain_khichdi.jpeg";
-import jeera_rice from "@/assets/jeera_rice.jpeg";
+import sevtomato from "@/assets/sevtomato.jpg";
+import sukhadi from "@/assets/sukhadi.jpeg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
 
 interface Thali {
   id: number;
@@ -21,38 +21,38 @@ interface Thali {
 const thalis: Thali[] = [
   {
     id: 1,
-    name: "Bengali Thali",
-    image: kadhi,
+    name: "Sev Tomato",
+    image: sevtomato,
     description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 40,
-    rating: 4.8,
-  },
-  {
-    id: 2,
-    name: "Gujarati Thali",
-    image: kaju_paneer,
-    description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 50,
-    rating: 4.9,
-  },
-  {
-    id: 3,
-    name: "Punjabi Thali",
-    image: plain_khichdi,
-    description:
-      "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 45,
+      "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic",
+    price: 18,
     rating: 4.7,
   },
   {
-    id: 4,
-    name: "South Indian Thali",
-    image: jeera_rice,
+    id: 2,
+    name: "Sukhadi",
+    image: sukhadi,
+    description:
+      "Three pieces",
+    price: 8,
+    rating: 4.5,
+  },
+  {
+    id: 3,
+    name: "Kaju Gathiya",
+    image: kaju_gathiya,
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 35,
+    price: 18,
+    rating: 4.3,
+  },
+  {
+    id: 4,
+    name: "Special Vagharelo Rotlo",
+    image: vagharelo_rotlo,
+    description:
+      "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
+    price: 18.99,
     rating: 4.6,
   },
 ];
@@ -124,7 +124,7 @@ const RestaurantLanding = () => {
                     </span>
                   </div>
                 </div> */}
-                <div className="text-left space-y-8 mt-12">
+                <div className="text-left space-y-8 mt-32">
                   <h1
                     className="text-5xl lg:text-7xl font-bold leading-tight font-heading"
                     style={{ color: "hsl(120, 45%, 25%)" }}
@@ -152,7 +152,7 @@ const RestaurantLanding = () => {
                     </Button>
                     <Button className="btn-outline-hero" asChild>
                       <a
-                        href="https://ubereats.com"
+                        href="https://www.ubereats.com/au/store/tulsi-kathiyawadi/e3pWlBGWXkmZ5Gzr10puWQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlByZXN0b24lMjBNYXJrZXQlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0NmJhYjJmZi05ZDA4LWNmMjEtNTNiNS05M2RjNzY4YmE4YjUlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0zNy43Mzg5Nzk5JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTQ1LjAwMjAyNzIlN0Q%3D&ps=1&surfaceName="
                         target="_blank"
                         rel="noopener noreferrer"
                       >

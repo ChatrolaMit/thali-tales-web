@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold font-heading">Pure Veg Cuisine</h3>
+            <h3 className="text-2xl font-bold font-heading">Tulsi Kathiyawadi</h3>
             <p className="text-primary-foreground/80">
-              Authentic vegetarian dining experience in the heart of Mumbai. 
+              Authentic vegetarian dining experience in the heart of Clayton South. 
               Fresh ingredients, traditional recipes, modern comfort.
             </p>
             <div className="flex space-x-3">
@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="#home" className="hover:text-primary-foreground transition-colors">Home</a></li>
               <li><a href="#serve" className="hover:text-primary-foreground transition-colors">Menu</a></li>
               <li><a href="#about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-              <li><a href="#gallery" className="hover:text-primary-foreground transition-colors">Gallery</a></li>
+             
               <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+61 492004534</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
@@ -70,9 +70,9 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/80 flex items-center justify-center space-x-2">
-            <span>© 2024 Pure Veg Cuisine. Made with</span>
+            <span>© 2024 Tulsi Kathiyawadi. Made with</span>
             <Heart className="h-4 w-4 text-red-400 fill-current" />
-            <span>in Mumbai</span>
+            <span>in Clayton South</span>
           </p>
         </div>
       </div>

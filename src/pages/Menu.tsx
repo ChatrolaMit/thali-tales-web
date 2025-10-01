@@ -25,7 +25,7 @@ import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 import masala_papad from "@/assets/masala_papad.jpeg";
 import bharela_papad from "@/assets/bharela_papad.jpeg";
-import sev_lasaniya from "@/assets/sev_lasaniya.jpg";
+import paneer_takatak from "@/assets/paneer_takatak.png";
 import sev_lasaniya_1 from "@/assets/sev_lasaniya_1.jpg";
 import chana_masala from "@/assets/chana_masala.jpg";
 import ringan_bharthu from "@/assets/ringan_bharthu.jpg";
@@ -40,6 +40,8 @@ import mango_ras from "@/assets/mango_ras.jpeg";
 import barja_rotlo_churmo from "@/assets/barja_rotlo_churmo.jpeg";
 import chas from "@/assets/chas.jpeg";
 import lasai from "@/assets/lasai.jpeg";
+import sev_dungari from "@/assets/sev_dungari.jpg";
+import dai_gathiya from "@/assets/dai_gathiya.jpg";
 
 
 const Menu = () => {
@@ -162,7 +164,7 @@ const Menu = () => {
         name: "Paneer Takatak",
         description: "Indian-style cheese curry with paneer",
         price: "$19.99",
-        image: kadhi
+        image: paneer_takatak
       },
       {
         id: "16",
@@ -230,7 +232,7 @@ const Menu = () => {
         name: "Sev Lili Dungari Spring Onion",
         description: "Crunchy sev and lili dungari in a flavorful spring onion curry",
         price: "$16.99",
-        image: ""
+        image: sev_dungari
       },
       {
         id: "25",
@@ -244,7 +246,7 @@ const Menu = () => {
         name: "Dahi Gathiya",
         description: "Yogurt-based curry with crunchy Gathiya bits",
         price: "$17.00",
-        image: ""
+        image: dai_gathiya
       },
       {
         id: "27",

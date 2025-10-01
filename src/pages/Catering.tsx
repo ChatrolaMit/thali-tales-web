@@ -195,7 +195,7 @@ const Catering = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Call Now: +91 98765 43210
+              Call Now: +61 492004534
             </Button>
             <Button size="lg" variant="outline">
               WhatsApp Us
