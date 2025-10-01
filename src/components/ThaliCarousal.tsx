@@ -1,10 +1,11 @@
+
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import kadhi from "@/assets/kadhi.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 import plain_khichdi from "@/assets/plain_khichdi.jpeg";
 import jeera_rice from "@/assets/jeera_rice.jpeg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface Thali {
   id: number;
@@ -52,7 +53,6 @@ const thalis: Thali[] = [
     price: 35,
     rating: 4.6,
   },
-  
 ];
 
 interface ThaliCarouselProps {
@@ -60,25 +60,23 @@ interface ThaliCarouselProps {
   onThaliSelect: (thaliId: number) => void;
 }
 
-const ThaliCarousel = ({
-  selectedThali,
-  onThaliSelect,
-}: ThaliCarouselProps) => {
+const ThaliCarousel = ({ selectedThali, onThaliSelect }: ThaliCarouselProps) => {
+  const [rotationCount, setRotationCount] = useState(0);
+
   const currentThali =
     thalis.find((thali) => thali.id === selectedThali) || thalis[0];
-  const rotationAngle = (selectedThali + 1) * -90;
   const radius = 350; // Adjust as needed for spacing
 
   useEffect(() => {
     const interval = setInterval(() => {
       const nextId = (selectedThali % thalis.length) + 1;
       onThaliSelect(nextId);
+      setRotationCount((prev) => prev - 90); // rotate step by step
     }, 2000);
 
     return () => clearInterval(interval);
   }, [selectedThali, onThaliSelect]);
 
-  
   return (
     <div className="w-full h-full flex items-center justify-center">
       {/* Circular Carousel Container */}
@@ -104,7 +102,7 @@ const ThaliCarousel = ({
         {/* Rotating Circle */}
         <motion.div
           className="absolute inset-0"
-          animate={{ rotate: rotationAngle }}
+          animate={{ rotate: rotationCount }}
           transition={{
             duration: 0.8,
             ease: [0.34, 1.56, 0.64, 1],
@@ -131,7 +129,7 @@ const ThaliCarousel = ({
                   left: `calc(50% + ${x}px - ${offset}px)`,
                   top: `calc(50% + ${y}px - ${offset}px)`,
                 }}
-                animate={{ rotate: -rotationAngle }}
+                animate={{ rotate: -rotationCount }}
                 transition={{
                   duration: 0.8,
                   ease: [0.34, 1.56, 0.64, 1],
@@ -216,3 +214,4 @@ const ThaliCarousel = ({
 };
 
 export default ThaliCarousel;
+
