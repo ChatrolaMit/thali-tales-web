@@ -42,6 +42,7 @@ import chas from "@/assets/chas.jpeg";
 import lasai from "@/assets/lasai.jpeg";
 import sev_dungari from "@/assets/sev_dungari.jpg";
 import dai_gathiya from "@/assets/dai_gathiya.jpg";
+import dahi_rotlo from "@/assets/dahi_rotlo.jpg";
 
 
 const Menu = () => {
@@ -49,13 +50,14 @@ const Menu = () => {
 
   const categories = [
     { id: "starters_swad_ni_saruat", name: "Starters Swad Ni Saruat", label: "Starters Swad Ni Saruat" },
-    { id: "rotla", name: "Roti Rotlo", label: "Roti Rotlo" },
-    { id: "rice", name: "Rice Ni Lijjat", label: "Rice Ni Lijjat" },
+    { id: "kathiyawadi_ramzat", name: "Kathiyawadi Ramzat", label: "Kathiyawadi Ramzat" },
     { id: "cheese_paneer_dhamaal", name: "Cheese Paneer Dhamaal", label: "Cheese Paneer Dhamaal" },
-    { id: "curries_kathiyawadi_ramzat", name: "Curries Kathiyawadi Ramzat", label: "Curries Kathiyawadi Ramzat" },
-    { id: "dal_ni_kamal", name: "Dal Ni Kamal", label: "Dal Ni Kamal" },
+    { id: "snacks", name: "Snacks", label: "Snaks" },
     { id: "sweets", name: "Sweets", label: "Sweets" },
-    { id: "drinks", name: "Drinks", label: "Drinks" },
+    { id: "rotla", name: "Rotla-Rotli", label: "Rotla-Rotli" },
+    { id: "dal_ni_kamal", name: "Dal Ni Kamal", label: "Dal Ni Kamal" },
+    { id: "rice", name: "Rice Ni Lijjat", label: "Rice Ni Lijjat" },
+    { id: "drinks", name: "Beverages", label: "Beverages" },
   ];
 
   const menuItems = {
@@ -64,300 +66,553 @@ const Menu = () => {
         id: "1",
         name: "Special Vagharelo Rotlo",
         description: "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
-        price: "$18.99",
+        price: "$17.00",
         image: vagharelo_rotlo,
         popular: true
+      },     
+      {
+        id: "2",
+        name: "Tulsi Veg. Dahi Rotlo",
+        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        price: "$18.00",
+        image: "" ,
+        popular: false
       },
       {
-        id: "2", 
+        id: "3",
+        name: "Tulsi Special Bharelo Rotlo",
+        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        price: "$12.00",
+        image: "" ,
+        popular: false
+      },
+      {
+        id: "4",
+        name: "Cheese Bharelo Rotlo",
+        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        price: "$14.00",
+        image: "" ,
+        popular: false
+      },
+      {
+        id: "5",
+        name: "Rosted Papad / Papadi",
+        description: "Thin, crispy papad roasted to perfection.",
+        price: "$2.50",
+        image: rosted_papad
+      },
+      {
+        id: "6",
+        name: "Fry Papad / Fry Khichiya papad",
+        description: "Thin, crispy papad roasted to perfection.",
+        price: "$2.50",
+        image: rosted_papad
+      },
+      {
+        id: "7", 
         name: "Masala Papad",
         description: "Thin, crispy flatbread flavoured with aromatic spices.",
-        price: "$6.00",
+        price: "$5.00",
+        image: masala_papad,
+        
+      },
+       {
+        id: "8", 
+        name: "Cheese Masala Papad",
+        description: "Thin, crispy flatbread flavoured with aromatic spices.",
+        price: "$7.00",
         image: masala_papad,
         
       },
       {
-        id: "3",
-        name: "Roasted Papad",
-        description: "Thin, crispy papad roasted to perfection.",
-        price: "$3.50",
-        image: rosted_papad
-      },
-      {
-        id: "4",
+        id: "9",
         name: "Gud Ghee",
         description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
-        price: "$5.00",
+        price: "$4.00",
         image: ghee_gud ,
         popular: true
-      }
+      },
     ],
-    rotla: [
-      {
-        id: "5",
-        name: "Ghee Bajra Rotlo",
-        description: "Traditional Gujarati flatbread made with ghee and bajra flour",
-        price: "$6.00",
-        image: bajra_rotlo,
-        popular: true
-      },
-      {
-        id: "6",
-        name: "Gee Fulka Roti", 
-        description: "Traditional Gujarati flatbread",
-        price: "$4.00",
-        image: roti
-      },
-      
-    ],
-    rice: [
-      {
-        id: "9",
-        name: "Jeera Rice",
-        description: "Flavourful rice infused with cumin seeds",
-        price: "$10.00",
-        image: jeera_rice,
-        
-      },
+    kathiyawadi_ramzat: [
       {
         id: "10",
-        name: "Plain Khichdi",
-        description: "Traditional Gujarati comfort food made with rice and lentils",
-        price: "$12.00",
-        image: plain_khichdi,
+        name: "Sev Tomato",
+        description: "Tomato-based curry with a crunchy sev topping",
+        price: "$16.00",
+        image: sevtomato,
         popular: true
+        
       },
       {
         id: "11",
-        name: "Kadhi",
-        description: "Traditional Gujarati yogurt-based curry",
+        name: "Dahi Tikhari",
+        description: "",
         price: "$12.00",
-        image: kadhi
+        image: sevtomato,
+        popular: true
+        
       },
       {
         id: "12",
-        name: "Plain Rice",
-        description: "Soft, fluffy steamed white rice",
-        price: "$7.00",
-        image: rice
-      }
-    ],
-    cheese_paneer_dhamaal: [
+        name: "Sev Lasaniya",
+        description: "Spicy garlic curry topped with crunchy sev for a bold Kathiyawadi flavor",
+        price: "$16.00",
+        image: sev_lasaniya_1,
+        popular: false
+      },
       {
         id: "13",
-        name: "Paneer Butter Masala",
-        description: "Rich and creamy paneer in a smooth buttery sauce",
-        price: "$16.99",
-        image: paneer_butter_masala,
-        
+        name: "Ringan Bharthu",
+        description: "Roasted eggplant in a rich and tangy curry sauce",
+        price: "$19.00",
+        image: ringan_bharthu,
+        popular: true
       },
       {
         id: "14",
-        name: "Kaju Paneer",
-        description: "Rich and creamy paneer in a cashew nut gravy",
-        price: "$20.00",
-        image: kaju_paneer,
-        popular: true
+        name: "Kathiyawadi Dhokali",
+        description: "",
+        price: "$19.00",
+        image: "",
+        popular: false
       },
       {
         id: "15",
-        name: "Paneer Takatak",
-        description: "Indian-style cheese curry with paneer",
-        price: "$19.99",
-        image: paneer_takatak
-      },
-      {
-        id: "16",
-        name: "Paneer Lasaniya",
-        description: "Rich and creamy paneer in a flavorful sauce",
-        price: "$16.99",
-        image: paneer_lasagna
-      },
-       {
-        id: "17",
-        name: "Palak Paneer",
-        description: "Creamy spinach curry with paneer",
-        price: "$16.99",
-        image: palak_paneer
-      },
-      {
-        id: "18",
-        name: "Cheese Butter Masala",
-        description: "Rich and creamy paneer in a buttery masala sauce",
-        price: "$18.00",
-        image: chess_butter_masala
-      },
-       {
-        id: "19",
-        name: "Kaju Curry",
-        description: "Rich and creamy curry made with cashews and paneer",
-        price: "$18.00",
-        image: kaju_curry
-      },
-    ],
-    curries_kathiyawadi_ramzat: [
-      {
-        id: "20",
-        name: "Sev Tomato",
-        description: "Tomato-based curry with a crunchy sev topping",
-        price: "$14.99",
-        image: sevtomato,
-         popular: true
-        
-      },
-      {
-        id: "21",
-        name: "Kaju Lasan",
-        description: "Rich cashew curry with a hint of garlic",
-        price: "$18.00",
-        image: kaju_lasan,
-        popular: true
-      },
-      {
-        id: "22",
-        name: "Kaju Gathiya",
-        description: "Indian-style cheese curry with paneer",
-        price: "$18.00",
-        image: kaju_gathiya
-      },
-      {
-        id: "23",
-        name: "Bharela Papad",
-        description: "Crispy papad filled with a flavorful mixture",
-        price: "$18.00",
-        image: bharela_papad
-      },
-       {
-        id: "24",
-        name: "Sev Lili Dungari Spring Onion",
-        description: "Crunchy sev and lili dungari in a flavorful spring onion curry",
-        price: "$16.99",
-        image: sev_dungari
-      },
-      {
-        id: "25",
-        name: "Sev Lasaniya",
-        description: "Spicy garlic curry topped with crunchy sev for a bold Kathiyawadi flavor",
-        price: "$14.99",
-        image: sev_lasaniya_1
-      },
-       {
-        id: "26",
-        name: "Dahi Gathiya",
-        description: "Yogurt-based curry with crunchy Gathiya bits",
-        price: "$17.00",
-        image: dai_gathiya
-      },
-      {
-        id: "27",
-        name: "Desi Chana Masala",
-        description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
-        price: "$16.99",
-        image: chana_masala
-      },
-      {
-        id: "28",
-        name: "Ringan Bharthu",
-        description: "Roasted eggplant in a rich and tangy curry sauce",
-        price: "$20.00",
-        image: ringan_bharthu
-      },
-      {
-        id: "29",
-        name: "Lasaniya Bataka",
-        description: "Potato curry in a rich and creamy sauce",
-        price: "$16.99",
-        image: lasaniya_batata,
-        popular:true,
-      },
-      {
-        id: "30",
         name: "Bharela Ringan",
         description: "Ringan (eggplant) in a rich and flavorful Kathiyawadi curry",
-        price: "$18.00",
+        price: "$19.00",
         image: bharela_ringan,
         popular:true,
       },
-      {
-        id: "31",
-        name: "Surti Undhiyu",
-        description: "Mixed vegetables in a rich and flavorful curry sauce",
-        price: "$22.00",
-        image: surti_undhiyu,
+       {
+        id: "16",
+        name: "Bharela Papad",
+        description: "Crispy papad filled with a flavorful mixture",
+        price: "$19.00",
+        image: bharela_papad,
         popular:true,
       },
+       {
+        id: "17",
+        name: "Dahi Gathiya",
+        description: "Yogurt-based curry with crunchy Gathiya bits",
+        price: "$18.00",
+        image: dai_gathiya,
+        popular:true,
+      },
+      {
+        id: "18",
+        name: "Desi Chana",
+        description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
+        price: "$18.00",
+        image: chana_masala,
+        popular:true,
+      },
+      {
+      id: "19",
+      name: "Moong Masala",
+      description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
+      price: "$18.00",
+      image: "",
+      popular:true,
+    },
+    {
+      id: "20",
+      name: "Moong Palak",
+      description:"",
+      price: "$18.00",
+      image: "",
+      popular:true,
+    },
+     
+    {
+      id: "21",
+      name: "Lasaniya Bataka",
+      description: "Potato curry in a rich and creamy sauce",
+      price: "$18.00",
+      image: lasaniya_batata,
+      popular:false,
+    },
+    {
+      id: "22",
+      name: "Sev Lili Dungari",
+      description: "Crunchy sev and lili dungari in a flavorful spring onion curry",
+      price: "$19.00",
+      image: "",
+      popular:false,
+    },
+     {
+      id: "23",
+      name: "Cheese Sev Lili Dungari",
+      description: "",
+      price: "$20.00",
+      image: "",
+      popular:false,
+    },
+    {
+      id: "24",
+      name: "Kaju Lasan",
+      description: "Rich cashew curry with a hint of garlic",
+      price: "$19.00",
+      image: kaju_lasan,
+      popular: true
+    },
+    {
+      id: "25",
+      name: "Kaju Gathiya",
+      description: "Indian-style cheese curry with paneer",
+      price: "$19.00",
+      image: kaju_gathiya,
+      popular: true
+    },
+    {
+      id: "26",
+      name: "Undhiyu",
+      description: "Mixed vegetables in a rich and flavorful curry sauce",
+      price: "$21.00",
+      image: surti_undhiyu,
+      popular:false,
+    },
     ],
-    dal_ni_kamal: [
+    cheese_paneer_dhamaal: [
+      {
+        id: "27",
+        name: "Paneer Butter Masala",
+        description: "Rich and creamy paneer in a smooth buttery sauce",
+        price: "$19.00",
+        image: paneer_butter_masala,
+        popular: true
+        
+      },
+      {
+        id: "28",
+        name: "Paneer Takatak",
+        description: "Indian-style cheese curry with paneer",
+        price: "$19.99",
+        image: paneer_takatak,
+        popular: true
+      },
+      {
+        id: "29",
+        name: "Paneer Angara",
+        description: "",
+        price: "$19.00",
+        image: "",
+        popular: true
+      },
+      {
+        id: "30",
+        name: "Methi Mutter Paneer",
+        description: "",
+        price: "$20.00",
+        image: "",
+        popular: true
+      },
+       {
+        id: "31",
+        name: "Veg Kolhapuri",
+        description: "",
+        price: "$20.00",
+        image: "",
+        popular: true
+      },
       {
         id: "32",
-        name: "Dal Fry",
-        description: "Toor dal tempered with ghee, onion, tomato, garlic, and spices",
-        price: "$16.99",
-        image: dal_fry,
-         
-        
+        name: "Paneer Lasaniya",
+        description: "Rich and creamy paneer in a flavorful sauce",
+        price: "$19.00",
+        image: paneer_lasagna,
+        popular: false
       },
       {
         id: "33",
-        name: "Butter Dal Tadka Fry",
-        description: "Rich and creamy lentil curry with a hint of butter",
-        price: "$18.00",
-        image: butter_dal_tadka,
+        name: "Palak Paneer",
+        description: "Creamy spinach curry with paneer",
+        price: "$20.00",
+        image: palak_paneer,
+        popular: true
+      },
+      {
+        id: "34",
+        name: "Paneer Bhurji",
+        description: "",
+        price: "$21.00",
+        image: palak_paneer,
+        popular: true
+      },
+        {
+        id: "35",
+        name: "Paneer Tikka Masala",
+        description: "",
+        price: "$21.00",
+        image: palak_paneer,
+        popular: false
+      },
+      {
+        id: "36",
+        name: "Cheese Butter Masala",
+        description: "Rich and creamy paneer in a buttery masala sauce",
+        price: "$20.00",
+        image: chess_butter_masala,
+        popular: true
+      },
+      {
+        id: "37",
+        name: "Cheese Lasaniya",
+        description: "",
+        price: "$20.00",
+        image: chess_butter_masala,
+        popular: false
+      },
+      {
+        id: "38",
+        name: "Kaju Curry",
+        description: "Rich and creamy curry made with cashews and paneer",
+        price: "$20.00",
+        image: kaju_curry,
+        popular: false
+      },
+      {
+        id: "39",
+        name: "Kaju Butter Masala",
+        description: "",
+        price: "$20.00",
+        image: "",
+        popular: true
+      },
+       {
+        id: "40",
+        name: "Cheese Kaju Masala",
+        description: "",
+        price: "$21.00",
+        image: "",
+        popular: true
+      }, 
+    ],
+    snacks: [
+      {
+        id: "41",
+        name: "Lilva Kachori (4 Pcs)",
+        description: "",
+        price: "$10.00",
+        image: "",
+        popular: false
         
+      },
+      {
+        id: "42",
+        name: "Veg Cutlet (4 Pcs)",
+        description: "",
+        price: "$10.99",
+        image: "",
+        popular: false
+      },
+      {
+        id: "43",
+        name: "Dry Vagharelo Rotlo",
+        description: "",
+        price: "$12.00",
+        image: "",
+        popular: false
       },
       
     ],
     sweets: [
       {
-        id: "34",
-        name: "Sukhadi",
-        description: "Three pieces",
-        price: "$8.00",
-        image: sukhadi,
-         
-        
-      },
-      {
-        id: "35",
+        id: "44",
         name: "Gulab Jamun",
         description: "Three pieces",
-        price: "$8.00",
+        price: "$6.00",
         image:gulab_jambun ,
-        
+        popular: false,
       },
       {
-        id: "36",
-        name: "Mango Ras",
-        description: "Sweet and creamy dessert made with mango",
-        price: "$7.99",
-        image:mango_ras ,
-        
+        id: "45",
+        name: "Sukhadi",
+        description: "Three pieces",
+        price: "$6.00",
+        image: sukhadi,
+         popular: false,
       },
       {
-        id: "37",
-        name: "Barja Rotlo Churmo",
-        description: "Traditional Gujarati sweet treat made with rotlo and churma",
+        id: "46",
+        name: "Puran Poli",
+        description: "Two pieces",
         price: "$8.00",
-        image:barja_rotlo_churmo ,
+        image: sukhadi,
+         popular: false,
+      },
+      
+      {
+        id: "47",
+        name: "Shrikhand",
+        description: "(200*gm)",
+        price: "$12.00",
+        image:"" ,
+        
+      },
+      {
+        id: "48",
+        name: "Dry Fruit Churmu",
+        description: "Traditional Gujarati sweet treat made with rotlo and churma",
+        price: "$10.00",
+        image:"" ,
         
       },
       
     ],
+    rotla: [
+      {
+        id: "49",
+        name: "Butter/Ghee Fulka Rotli",
+        description: "Traditional Gujarati flatbread made with ghee and white flour",
+        price: "$3.00",
+        image: roti,
+        popular: false
+      },
+      {
+        id: "50",
+        name: "Ghee Bajari Rotlo", 
+        description: "Traditional Gujarati flatbread made with ghee and bajri flour",
+        price: "$5.00",
+        image: bajra_rotlo
+      },
+      {
+        id: "51",
+        name: "Ghee Makai Rotlo", 
+        description: "Traditional Gujarati flatbread made with ghee and maki flour",
+        price: "$5.00",
+        image: ""
+      },
+      
+    ],
+     dal_ni_kamal: [
+      {
+        id: "52",
+        name: "Gujarati Kadhi",
+        description: "",
+        price: "$10.00",
+        image: "",
+        popular: true,
+        
+      },
+      {
+        id: "53",
+        name: "Dal Fry",
+        description: "",
+        price: "$18.00",
+        image: dal_fry,
+        popular: true,
+        
+      },
+      {
+        id: "54",
+        name: "Tadka Dal Fry",
+        description: "Rich and creamy lentil curry with a hint of butter",
+        price: "$20.00",
+        image: butter_dal_tadka,
+        popular: true,
+        
+      },
+      
+    ],
+    rice: [
+      {
+        id: "55",
+        name: "Plain Khichdi Kadhi",
+        description: "",
+        price: "$18.00",
+        image: plain_khichdi,
+        popular: true
+        
+      },
+      {
+        id: "56",
+        name: "Vaghareli Khichdi Kadhi",
+        description: "",
+        price: "$19.00",
+        image: "",
+        popular: true
+      },
+      {
+        id: "57",
+        name: "Swaminarayan Khichdi Kadhi",
+        description: "",
+        price: "$20.00",
+        image: ""
+      },
+      {
+        id: "58",
+        name: "Tulsi Sp. Rajwadi Khichdi Kadhi",
+        description: "",
+        price: "$20.00",
+        image: "",
+        popular: "true"
+      },
+      {
+        id: "59",
+        name: "Plain Rice",
+        description: "Soft, fluffy steamed white rice",
+        price: "$8.00",
+        image: rice
+      },
+      {
+        id: "60",
+        name: "Jeera Rice",
+        description: "",
+        price: "$8.00",
+        image: ""
+      },
+      {
+        id: "61",
+        name: "Masala Rice with Curd",
+        description: "",
+        price: "$16.00",
+        image: ""
+      }
+    ],
+    
     drinks: [
       {
-        id: "34",
-        name: "Masala Chaas",
-        description: "A refreshing yogurt-based drink with a blend of spices",
-        price: "$5.00",
+        id: "62",
+        name: "Dahi",
+        description: "",
+        price: "$4.00",
         image: chas,
-        popular: true,
+        popular: false,
          
         
       },
       {
-        id: "35",
-        name: "Lassi",
-        description: "Traditional yogurt-based drink from India, smooth and creamy",
+        id: "63",
+        name: "Masala Chhas",
+        description: "",
+        price: "$6.00",
+        image:lasai ,
+        
+      },
+      {
+        id: "64",
+        name: "Sweet Lassie",
+        description: "",
+        price: "$6.00",
+        image:lasai ,
+        
+      },
+    
+      {
+        id: "65",
+        name: "Mango lassie",
+        description: "",
+        price: "$7.00",
+        image:lasai ,
+        
+      },
+    
+      {
+        id: "66",
+        name: "Kaju Lassie",
+        description: "",
         price: "$8.00",
         image:lasai ,
         
