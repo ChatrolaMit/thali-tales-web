@@ -23,7 +23,7 @@ const thalis: Thali[] = [
     image: sevtomato,
     description:
       "A tangy tomato curry topped with crunchy sev, a Kathiyawadi classic",
-    price: 18,
+    price: 17.00,
     rating: 4.7,
   },
   {
@@ -32,7 +32,7 @@ const thalis: Thali[] = [
     image: sukhadi,
     description:
       "Three pieces",
-    price: 8,
+    price: 6.00,
     rating: 4.5,
   },
   {
@@ -41,16 +41,16 @@ const thalis: Thali[] = [
     image: kaju_gathiya,
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
-    price: 18,
+    price: 20.00,
     rating: 4.3,
   },
   {
     id: 4,
-    name: "Special Vagharelo Rotlo",
+    name: "Vagharelo Rotlo - Dah",
     image: vagharelo_rotlo,
     description:
       "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
-    price: 18.99,
+    price: 17.00,
     rating: 4.6,
   },
 ];

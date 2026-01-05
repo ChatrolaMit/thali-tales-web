@@ -49,13 +49,13 @@ const Menu = () => {
   const [activeCategory, setActiveCategory] = useState("starters_swad_ni_saruat");
 
   const categories = [
-    { id: "starters_swad_ni_saruat", name: "Starters Swad Ni Saruat", label: "Starters Swad Ni Saruat" },
+    { id: "starters_swad_ni_saruat", name: "Swad Ni Saruat (Starter)", label: "Starters Swad Ni Saruat" },
     { id: "kathiyawadi_ramzat", name: "Kathiyawadi Ramzat", label: "Kathiyawadi Ramzat" },
     { id: "cheese_paneer_dhamaal", name: "Cheese Paneer Dhamaal", label: "Cheese Paneer Dhamaal" },
-    { id: "snacks", name: "Snacks", label: "Snaks" },
+    { id: "snacks", name: "Snacks", label: "Snacks" },
     { id: "sweets", name: "Sweets", label: "Sweets" },
     { id: "rotla", name: "Rotla-Rotli", label: "Rotla-Rotli" },
-    { id: "dal_ni_kamal", name: "Dal Ni Kamal", label: "Dal Ni Kamal" },
+    { id: "dal_ni_kamal", name: "Punjabi Ni Kamal", label: "Dal Ni Kamal" },
     { id: "rice", name: "Rice Ni Lijjat", label: "Rice Ni Lijjat" },
     { id: "drinks", name: "Beverages", label: "Beverages" },
   ];
@@ -64,16 +64,17 @@ const Menu = () => {
     starters_swad_ni_saruat: [
       {
         id: "1",
-        name: "Special Vagharelo Rotlo",
+        name: "Vagharelo Rotlo - Dahi",
         description: "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
         price: "$17.00",
         image: vagharelo_rotlo,
-        popular: true
+        popular: true,
+        jain:true,
       },     
       {
         id: "2",
         name: "Tulsi Veg. Dahi Rotlo",
-        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        description: "Traditional millet rotlo crumbled and mixed with fresh curd, onions, green chilies, and mild spices — a cooling and comforting Kathiyawadi classic",
         price: "$18.00",
         image: "" ,
         popular: false
@@ -81,7 +82,7 @@ const Menu = () => {
       {
         id: "3",
         name: "Tulsi Special Bharelo Rotlo",
-        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        description: "Traditional millet rotlo stuffed with a spicy mix of onions, garlic, green chilies, peanuts, and authentic Kathiyawadi spices — bursting with rustic flavors",
         price: "$12.00",
         image: "" ,
         popular: false
@@ -89,7 +90,7 @@ const Menu = () => {
       {
         id: "4",
         name: "Cheese Bharelo Rotlo",
-        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        description: "Traditional millet rotlo stuffed with a rich blend of melted cheese, onions, green chilies, and flavorful spices",
         price: "$14.00",
         image: "" ,
         popular: false
@@ -99,19 +100,19 @@ const Menu = () => {
         name: "Rosted Papad / Papadi",
         description: "Thin, crispy papad roasted to perfection.",
         price: "$2.50",
-        image: rosted_papad
+        image: ""
       },
       {
         id: "6",
         name: "Fry Papad / Fry Khichiya papad",
-        description: "Thin, crispy papad roasted to perfection.",
+        description: "Thin, crunchy papad deep-fried until golden and lightly seasoned",
         price: "$2.50",
-        image: rosted_papad
+        image: ""
       },
       {
         id: "7", 
         name: "Masala Papad",
-        description: "Thin, crispy flatbread flavoured with aromatic spices.",
+        description: "Crispy papad topped with fresh onions, tomatoes, green chilies, herbs, and tangy spices — a crunchy and refreshing starter.",
         price: "$5.00",
         image: masala_papad,
         
@@ -119,59 +120,61 @@ const Menu = () => {
        {
         id: "8", 
         name: "Cheese Masala Papad",
-        description: "Thin, crispy flatbread flavoured with aromatic spices.",
+        description: "Crispy papad topped with fresh onions, tomatoes, green chilies, tangy spices, and a generous layer of melted cheese.",
         price: "$7.00",
-        image: masala_papad,
+        image: "",
         
       },
       {
         id: "9",
         name: "Gud Ghee",
-        description: "Tender okra stir-fried with onions, tomatoes, turmeric, red chili powder, and coriander",
+        description: "Pure jaggery and desi ghee",
         price: "$4.00",
         image: ghee_gud ,
-        popular: true
+        popular: false
       },
     ],
-    kathiyawadi_ramzat: [
+    kathiyawadi_ramzat: [  
       {
         id: "10",
         name: "Sev Tomato",
-        description: "Tomato-based curry with a crunchy sev topping",
-        price: "$16.00",
+        description: "Tangy tomato curry cooked with spices and topped with crunchy sev - a classic Gujarati comfort dish.",
+        price: "$17.00",
         image: sevtomato,
-        popular: true
+        popular: true,
+        jain:true,
         
       },
       {
         id: "11",
         name: "Dahi Tikhari",
-        description: "",
+        description: "Spiced yogurt curry cooked with aromatic spices and tempered with mustard seeds, curry leaves, and green chilies - light, tangy, and comforting.",
         price: "$12.00",
-        image: sevtomato,
-        popular: true
+        image: "",
+        popular: true,
+        jain:true,
         
       },
       {
         id: "12",
         name: "Sev Lasaniya",
         description: "Spicy garlic curry topped with crunchy sev for a bold Kathiyawadi flavor",
-        price: "$16.00",
-        image: sev_lasaniya_1,
+        price: "$17.00",
+        image: "",
         popular: false
       },
       {
         id: "13",
         name: "Ringan Bharthu",
-        description: "Roasted eggplant in a rich and tangy curry sauce",
-        price: "$19.00",
-        image: ringan_bharthu,
+        description: "Smoky roasted eggplant mashed and cooked with onions, tomatoes, garlic, and spices.",
+        price: "$20.00",
+        image: "",
         popular: true
       },
       {
         id: "14",
         name: "Kathiyawadi Dhokali",
-        description: "",
+        description: "Soft wheat dumplings gently cooked in a flavorful, spiced, and tangy gravy, infused with aromatic herbs",
         price: "$19.00",
         image: "",
         popular: false
@@ -179,98 +182,105 @@ const Menu = () => {
       {
         id: "15",
         name: "Bharela Ringan",
-        description: "Ringan (eggplant) in a rich and flavorful Kathiyawadi curry",
-        price: "$19.00",
-        image: bharela_ringan,
+        description: "Ringan stuffed with a spiced gram flour mixture and aromatic Kathiyawadi spices — a traditional, flavorful delicacy.",
+        price: "$20.00",
+        image: "",
         popular:true,
       },
        {
         id: "16",
         name: "Bharela Papad",
-        description: "Crispy papad filled with a flavorful mixture",
+        description: "Crispy papads cooked in a spiced yogurt and gram flour gravy, tempered with cumin, mustard, ginger, green chilies, and aromatic spices, finished with kasuri methi and fresh coriander",
         price: "$19.00",
         image: bharela_papad,
         popular:true,
+        jain:true,
       },
        {
         id: "17",
         name: "Dahi Gathiya",
-        description: "Yogurt-based curry with crunchy Gathiya bits",
+        description: "Crispy gathiya in spiced yogurt, tempered with mustard, cumin, curry leaves, and red chilies, finished with fresh coriander",
         price: "$18.00",
-        image: dai_gathiya,
+        image: "",
         popular:true,
+        jain:true,
       },
       {
         id: "18",
         name: "Desi Chana",
-        description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
+        description: "Tender desi chickpeas slow-cooked in a spiced tomato-based sauce with aromatic herbs",
         price: "$18.00",
-        image: chana_masala,
+        image: "",
         popular:true,
+        jain:true,
+        
       },
       {
       id: "19",
       name: "Moong Masala",
-      description: "Chickpeas cooked in a rich, aromatic tomato-based sauce",
+      description: "Whole green moong beans cooked with aromatic spices, tempered with mustard seeds, ginger, garlic, and onions, finished with tomatoes and fresh coriander",
       price: "$18.00",
       image: "",
       popular:true,
+      jain:true,
     },
     {
       id: "20",
-      name: "Moong Palak",
-      description:"",
+      name: "Urad Palak",
+      description:"Whole green moong beans cooked with fresh spinach and aromatic spices, tempered with mustard seeds, garlic, and onions",
       price: "$18.00",
       image: "",
       popular:true,
+      jain:true,
     },
      
     {
       id: "21",
       name: "Lasaniya Bataka",
-      description: "Potato curry in a rich and creamy sauce",
+      description: "Baby potatoes cooked in a spicy garlic and red chili paste with onions, tomatoes, and aromatic spices, tempered with cumin, coriander, and asafoetida, and finished with fresh coriander",
       price: "$18.00",
-      image: lasaniya_batata,
+      image: "",
       popular:false,
     },
     {
       id: "22",
       name: "Sev Lili Dungari",
-      description: "Crunchy sev and lili dungari in a flavorful spring onion curry",
-      price: "$19.00",
+      description: "Fresh spring onions and thick sev cooked in a spicy garlic-chili paste, finished in a tangy buttermilk or gram flour gravy",
+      price: "$20.00",
       image: "",
       popular:false,
     },
      {
       id: "23",
       name: "Cheese Sev Lili Dungari",
-      description: "",
-      price: "$20.00",
+      description: "Fresh spring onions and thick sev cooked in a tangy, spicy gravy with cheese, optionally enriched with buttermilk or gram flour, and garnished with fresh coriander",
+      price: "$21.00",
       image: "",
       popular:false,
     },
     {
       id: "24",
       name: "Kaju Lasan",
-      description: "Rich cashew curry with a hint of garlic",
-      price: "$19.00",
+      description: "Fried cashews and plenty of garlic cooked in a spicy onion-tomato gravy, finished with cream",
+      price: "$20.00",
       image: kaju_lasan,
       popular: true
     },
     {
       id: "25",
       name: "Kaju Gathiya",
-      description: "Indian-style cheese curry with paneer",
-      price: "$19.00",
+      description: "Fried cashews and crispy gathiya simmered in a spicy, tangy tomato-onion gravy, served fresh to keep the gathiya crunchy",
+      price: "$20.00",
       image: kaju_gathiya,
-      popular: true
+      popular: true,
+      jain:true,
     },
     {
       id: "26",
       name: "Undhiyu",
-      description: "Mixed vegetables in a rich and flavorful curry sauce",
-      price: "$21.00",
-      image: surti_undhiyu,
+      description: "Potatoes, yams, sweet potatoes, brinjals, and beans slow-cooked with aromatic green masala and fenugreek dumplings",
+      price: "$22.00",
+      image: "",
       popular:false,
     },
     ],
@@ -278,115 +288,124 @@ const Menu = () => {
       {
         id: "27",
         name: "Paneer Butter Masala",
-        description: "Rich and creamy paneer in a smooth buttery sauce",
-        price: "$19.00",
+        description: "Soft paneer cubes simmered in a rich, creamy tomato and butter gravy, subtly spiced for a smooth, indulgent flavor.",
+        price: "$20.00",
         image: paneer_butter_masala,
-        popular: true
+        popular: true,
+        jain:true
         
       },
       {
         id: "28",
         name: "Paneer Takatak",
-        description: "Indian-style cheese curry with paneer",
-        price: "$19.99",
-        image: paneer_takatak,
-        popular: true
+        description: "Crispy paneer cubes tossed with onions, bell peppers, and tomatoes in a spicy, flavorful gravy, enriched with cream or cashew paste and garnished with fresh coriander",
+        price: "20.99",
+        image: "",
+        popular: true,
+        jain:true
       },
       {
         id: "29",
         name: "Paneer Angara",
-        description: "",
-        price: "$19.00",
+        description: "Paneer cubes cooked in a rich, spicy gravy with onions, tomatoes, bell peppers, and cashews, finished with a smoky “Angara” flavor",
+        price: "$20.00",
         image: "",
-        popular: true
+        popular: true,
+        jain:true
+
       },
       {
         id: "30",
         name: "Methi Mutter Paneer",
-        description: "",
-        price: "$20.00",
+        description: "Soft paneer cubes cooked with fresh fenugreek leaves and green peas in a rich, creamy tomato-onion gravy",
+        price: "$21.00",
         image: "",
         popular: true
       },
        {
         id: "31",
         name: "Veg Kolhapuri",
-        description: "",
-        price: "$20.00",
+        description: "A fiery, aromatic curry of mixed vegetables like carrots, beans, potatoes, cauliflower, and peas, cooked in a rich, spiced coconut-onion gravy with whole roasted spices",
+        price: "$21.00",
         image: "",
         popular: true
       },
       {
         id: "32",
         name: "Paneer Lasaniya",
-        description: "Rich and creamy paneer in a flavorful sauce",
-        price: "$19.00",
-        image: paneer_lasagna,
+        description: "Paneer cubes cooked in a rich, creamy garlic-tomato gravy with cashew paste, finished with cream, butter, and kasuri methi",
+        price: "$20.00",
+        image: "",
         popular: false
       },
       {
         id: "33",
         name: "Palak Paneer",
-        description: "Creamy spinach curry with paneer",
-        price: "$20.00",
-        image: palak_paneer,
+        description: "Soft paneer cubes simmered in a smooth, spiced spinach gravy",
+        price: "$21.00",
+        image: "",
         popular: true
       },
       {
         id: "34",
         name: "Paneer Bhurji",
-        description: "",
-        price: "$21.00",
-        image: palak_paneer,
-        popular: true
+        description: "Spiced, scrambled paneer cooked with onions, tomatoes, and aromatic herbs",
+        price: "$22.00",
+        image: "",
+        popular: true,
+        jain:true
       },
         {
         id: "35",
         name: "Paneer Tikka Masala",
-        description: "",
-        price: "$21.00",
-        image: palak_paneer,
+        description: "Marinated paneer cubes grilled to perfection and simmered in a rich, creamy tomato-onion gravy",
+        price: "$22.00",
+        image: "",
         popular: false
       },
       {
         id: "36",
         name: "Cheese Butter Masala",
-        description: "Rich and creamy paneer in a buttery masala sauce",
-        price: "$20.00",
-        image: chess_butter_masala,
-        popular: true
+        description: "Soft cheese cubes simmered in a rich, creamy tomato and cashew-based gravy",
+        price: "$21.00",
+        image: "",
+        popular: true,
+        jain:true
       },
       {
         id: "37",
         name: "Cheese Lasaniya",
-        description: "",
-        price: "$20.00",
-        image: chess_butter_masala,
+        description: "A rich and comforting dish, cheese lasagna layers wide lasagna noodles with a savory tomato sauce and a blend of creamy",
+        price: "$21.00",
+        image: "",
         popular: false
       },
       {
         id: "38",
         name: "Kaju Curry",
-        description: "Rich and creamy curry made with cashews and paneer",
-        price: "$20.00",
-        image: kaju_curry,
-        popular: false
+        description: "Roasted cashews simmered in a rich, creamy onion-tomato gravy, delicately spiced",
+        price: "$21.00",
+        image: "",
+        popular: false,
+        jain:true
       },
       {
         id: "39",
         name: "Kaju Butter Masala",
-        description: "",
-        price: "$20.00",
+        description: "Roasted cashews cooked in a rich, buttery tomato gravy with subtle spices",
+        price: "$21.00",
         image: "",
-        popular: true
+        popular: true,
+        jain:true
       },
        {
         id: "40",
         name: "Cheese Kaju Masala",
-        description: "",
-        price: "$21.00",
+        description: "Tender cheese and cashews simmered in a velvety tomato-butter sauce, finished with cream",
+        price: "$22.00",
         image: "",
-        popular: true
+        popular: true,
+        jain:true
       }, 
     ],
     snacks: [
@@ -395,22 +414,22 @@ const Menu = () => {
         name: "Lilva Kachori (4 Pcs)",
         description: "",
         price: "$10.00",
-        image: "",
+        image: "Crispy, flaky pastry filled with a spicy, sweet, and tangy mixture of fresh green pigeon peas and aromatic spices",
         popular: false
         
       },
       {
         id: "42",
         name: "Veg Cutlet (4 Pcs)",
-        description: "",
-        price: "$10.99",
+        description: "Spiced mashed vegetables shaped into patties, coated in breadcrumbs",
+        price: "$10.00",
         image: "",
         popular: false
       },
       {
         id: "43",
         name: "Dry Vagharelo Rotlo",
-        description: "",
+        description: "Crumbled millet flatbread stir-fried with a spicy",
         price: "$12.00",
         image: "",
         popular: false
@@ -420,33 +439,33 @@ const Menu = () => {
     sweets: [
       {
         id: "44",
-        name: "Gulab Jamun",
-        description: "Three pieces",
+        name: "Gulab Jamun (3 Pcs)",
+        description: "Soft, spongy milk dumplings soaked in fragrant sugar syrup",
         price: "$6.00",
         image:gulab_jambun ,
         popular: false,
       },
       {
         id: "45",
-        name: "Sukhadi",
-        description: "Three pieces",
+        name: "Sukhadi (3 Pcs)",
+        description: "A traditional Gujarati sweet made with whole wheat flour, jaggery, and ghee",
         price: "$6.00",
         image: sukhadi,
          popular: false,
       },
       {
         id: "46",
-        name: "Puran Poli",
-        description: "Two pieces",
+        name: "Puran Poli (2 Pcs)",
+        description: "Soft, sweet flatbread stuffed with a spiced chana dal and jaggery filling",
         price: "$8.00",
-        image: sukhadi,
+        image: "",
          popular: false,
       },
       
       {
         id: "47",
-        name: "Shrikhand",
-        description: "(200*gm)",
+        name: "Shrikhand (200*gm)",
+        description: "Creamy, strained yogurt sweetened and flavored with saffron and cardamom",
         price: "$12.00",
         image:"" ,
         
@@ -454,7 +473,7 @@ const Menu = () => {
       {
         id: "48",
         name: "Dry Fruit Churmu",
-        description: "Traditional Gujarati sweet treat made with rotlo and churma",
+        description: "A rich, sweet mixture of crushed wheat, ghee, jaggery, and assorted dry fruits",
         price: "$10.00",
         image:"" ,
         
@@ -464,10 +483,10 @@ const Menu = () => {
     rotla: [
       {
         id: "49",
-        name: "Butter/Ghee Fulka Rotli",
+        name: "Ghee Fulka Rotli",
         description: "Traditional Gujarati flatbread made with ghee and white flour",
         price: "$3.00",
-        image: roti,
+        image: "",
         popular: false
       },
       {
@@ -475,7 +494,7 @@ const Menu = () => {
         name: "Ghee Bajari Rotlo", 
         description: "Traditional Gujarati flatbread made with ghee and bajri flour",
         price: "$5.00",
-        image: bajra_rotlo
+        image: ""
       },
       {
         id: "51",
@@ -489,132 +508,147 @@ const Menu = () => {
      dal_ni_kamal: [
       {
         id: "52",
-        name: "Gujarati Kadhi",
-        description: "",
-        price: "$10.00",
+        name: "Dal Fry",
+        description: "Yellow lentils cooked until creamy and tempered with garlic, onions, tomatoes, and aromatic spices",
+        price: "$18.00",
         image: "",
         popular: true,
+        jain:true
         
       },
       {
         id: "53",
-        name: "Dal Fry",
-        description: "",
-        price: "$18.00",
-        image: dal_fry,
+        name: "Butter Dal Tadka",
+        description: "Creamy yellow lentils slow-cooked and finished with generous butter, then tempered with garlic, onions, tomatoes, and aromatic Indian spices.",
+        price: "$20.00",
+        image: "",
         popular: true,
+        jain:true
         
       },
       {
         id: "54",
-        name: "Tadka Dal Fry",
-        description: "Rich and creamy lentil curry with a hint of butter",
-        price: "$20.00",
-        image: butter_dal_tadka,
+        name: "Rajma Masala",
+        description: "Slow-cooked red kidney beans simmered in a spiced onion-tomato gravy with aromatic Indian masalas.",
+        price: "$16.00",
+        image: "",
         popular: true,
+        jain:true
+        
+      },
+       {
+        id: "55",
+        name: "Dal Makhni",
+        description: "Slow-cooked black lentils and kidney beans simmered with butter, cream, and aromatic spices.",
+        price: "$18.00",
+        image: "",
+        popular: true,
+        jain:true
         
       },
       
     ],
     rice: [
       {
-        id: "55",
-        name: "Plain Khichdi Kadhi",
-        description: "",
+        id: "56",
+        name: "Gujarati Dal & Rice",
+        description: "Lightly spiced Gujarati-style lentil dal with a hint of sweetness, paired with fluffy steamed rice.",
         price: "$18.00",
-        image: plain_khichdi,
-        popular: true
+        image: "",
+        popular: true,
+        jain:true
         
       },
       {
-        id: "56",
-        name: "Vaghareli Khichdi Kadhi",
-        description: "",
-        price: "$19.00",
+        id: "57",
+        name: "Gujarati Kadhi & Plain Khichadi",
+        description: "Smooth yogurt-based Gujarati kadhi with gentle spices, served alongside simple, soothing plain khichdi.",
+        price: "$18.00",
         image: "",
         popular: true
       },
       {
-        id: "57",
-        name: "Swaminarayan Khichdi Kadhi",
-        description: "",
-        price: "$20.00",
-        image: ""
-      },
-      {
         id: "58",
-        name: "Tulsi Sp. Rajwadi Khichdi Kadhi",
-        description: "",
+        name: "Gujarati Kadhi & Kathiyawadi Khichadi",
+        description: "Sweet-tangy Gujarati kadhi paired with hearty Kathiyawadi khichdi seasoned with rustic spices.",
         price: "$20.00",
         image: "",
-        popular: "true"
+       
       },
+
       {
         id: "59",
         name: "Plain Rice",
         description: "Soft, fluffy steamed white rice",
         price: "$8.00",
-        image: rice
+        image: ""
       },
       {
         id: "60",
         name: "Jeera Rice",
-        description: "",
-        price: "$8.00",
+        description: "Steamed rice tempered with fragrant cumin seeds",
+        price: "$10.00",
         image: ""
       },
       {
         id: "61",
+        name: "Masala Rice",
+        description: "Steamed rice tempered with Indian spices for a flavorful touch",
+        price: "$15.00",
+        image: ""
+      },
+      {
+        id: "62",
         name: "Masala Rice with Curd",
-        description: "",
-        price: "$16.00",
+        description: "Flavorful masala rice served with cooling fresh curd.",
+        price: "$18.00",
         image: ""
       }
     ],
     
     drinks: [
       {
-        id: "62",
-        name: "Dahi",
-        description: "",
+        id: "63",
+        name: "Dahi (100g)",
+        description: "Fresh, creamy yogurt",
         price: "$4.00",
-        image: chas,
+        image: "",
         popular: false,
          
         
       },
       {
-        id: "63",
+        id: "64",
         name: "Masala Chhas",
-        description: "",
+        description: "Refreshing buttermilk blended with aromatic spices and herbs",
         price: "$6.00",
-        image:lasai ,
+        image:chas ,
         
       },
       {
-        id: "64",
+        id: "65",
         name: "Sweet Lassie",
-        description: "",
+        description: "Creamy, chilled yogurt blended with sugar",
         price: "$6.00",
-        image:lasai ,
+        image:"" ,
         
       },
     
       {
-        id: "65",
+        id: "66",
         name: "Mango lassie",
-        description: "",
+        description: "Creamy yogurt blended with ripe mangoes",
         price: "$7.00",
         image:lasai ,
         
       },
     
       {
-        id: "66",
+        id: "67",
         name: "Kaju Lassie",
-        description: "",
+        description: "Smooth yogurt drink enriched with cashew paste",
         price: "$8.00",
-        image:lasai ,
+        image:"" ,
         
       },
     
@@ -643,20 +677,20 @@ const Menu = () => {
 
       {/* Menu Navigation */}
       <section className="py-8 border-b border-border bg-card/50">
-  <div className="section-container">
-    <div className="flex justify-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar">
-      {categories.map((category) => (
-        <Button
-          key={category.id}
-          variant={activeCategory === category.id ? "default" : "outline"}
-          onClick={() => setActiveCategory(category.id)}
-          className="min-w-[120px]"
-        >
-          {category.name}
-        </Button>
-      ))}
-    </div>
-  </div>
+      <div className="section-container">
+        <div className="flex justify-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar">
+          {categories.map((category) => (
+            <Button
+              key={category.id}
+              variant={activeCategory === category.id ? "default" : "outline"}
+              onClick={() => setActiveCategory(category.id)}
+              className="min-w-[100px]"
+            >
+              {category.name}
+            </Button>
+          ))}
+        </div>
+      </div>
 </section>
 
       {/* Menu Items */}
@@ -684,6 +718,12 @@ const Menu = () => {
                                 Popular
                               </Badge>
                             )}
+                            {item.jain && (
+                              <Badge variant="secondary" className="bg-primary/10 text-primary">
+                                Jain
+                              </Badge>
+                            )}
+
                           </div>
                           <p className="text-muted-foreground leading-relaxed">
                             {item.description}

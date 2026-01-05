@@ -9,49 +9,153 @@ import { Users, Clock, MapPin, CheckCircle } from "lucide-react";
 const Catering = () => {
   const packages = [
     {
-      name: "Family Package",
-      serves: "10-15 People",
-      price: "$50",
+      name: "PUNJABI",
       items: [
-        "Dal Tadka",
+        "Cheese Butter Masala",
         "Paneer Butter Masala",
-        "Aloo Gobi",
-        "Rice",
-        "4 Rotis",
-        "Raita",
-        "Dessert",
+        "Palak Paneer",
+        "Cheese Kaju Masala",
+        "Veg Kolhapuri",
+        "Veg Makhanwala",
+        "Paneer Tikka Masala",
+        "Cheese Lasaniya",
+        "Paneer Angara",
+        "Kaju Curry",
+      ],
+    },
+    {
+      name: "KATHIYAVADI",
+      items: [
+        "Sev Tameta",
+        "Sev Lasaniya",
+        "Kaju Lasaniya",
+        "Lasaniya Batata",
+        "Ringan Nu Bharthu(Olo)",
+        "Rajwadi Dhokli",
+        "Bharela Ringan-Batata",
+        "Rajwadi Undhiyu",
+        "Desi Chana Masala",
+        "Mag Masala",
+        "Kaju Gathiya",
+        "Bhindi Masala",
+        "Dahi Bhindi",
+        "Dahi Tikhari",
+        "Bharela Papad",
+        "Kathiyawadi Mehfil",
+      ],
+    },
+    {
+      name: "GUJARATI",
+      items: [
+        "Lachko Dal",
+        "Tameta Batata Gujarati Shaak",
+        "Ringan Batata Shaak",
+        "Batata Vatana Shak",
+        "Dum Aloo",
+        "Sukhi Bhaji (Potato)",
+        "Aloo Palak",
+        "Mix Gujarati Dry",
+        "Moong Masala",
+        "Desi Chana",
+        "Moong Dal Palak",
+        
+      ],
+    },
+
+    {
+      name: "INDIAN STREET TADKA",
+      items: [
+        "Chole Bhature",
+        "Chole Kulcha",
+        "Bhaji Kulcha",
+        "Bhaji Pav",
+        "Pulao",
+        "Veg Biryani",
+        "Peas Pulao",
+        "Kashmiri Pulao",
+        "Manchurian",
+        "Manchurian Noodles",
+        "Manchurian Rice",
+        "Paneer Chilly",
+      ],
+      
+    },
+    {
+      name: "INDIAN BREAKFAST",
+      items: [
+        "Poha",
+        "Upma",
+        "Idli Sambhar",
+        "Samosa Chaat",
+        "Mix Bhajiya",
+        "Khaman",
+        "Thepla Bhaji",
+        "Vadapav",
+        "Delhi Chaat",
+        "Dabeli",
+        "Samosa Chaat",
       ],
       popular: false,
     },
     {
-      name: "Party Package",
-      serves: "25-30 People",
-      price: "$100",
+      name: "EXTRA",
       items: [
-        "2 Dal Varieties",
-        "2 Sabji Options",
-        "Paneer Dish",
-        "Rice",
-        "12 Rotis",
-        "Raita",
-        "Pickle",
-        "2 Desserts",
+        "Khichiya Papad",
+        "Papad",
+        "Papadi",
+        "Papad Churi",
+        "Ghee - Gol",
+        "Chaas",
+        "Lassi",
       ],
-      popular: true,
+      popular: false,
     },
     {
-      name: "Wedding Package",
-      serves: "50+ People",
-      price: "$20/person",
+      name: "SWEET",
       items: [
-        "3 Dal Varieties",
-        "4 Sabji Options",
-        "2 Paneer Dishes",
-        "Biryani",
-        "Unlimited Rotis",
-        "Raita",
-        "Pickle",
-        "3 Desserts",
+        "Gulab Jamun",
+        "Magdal Halvo",
+        "Mohanthal",
+        "Sukhdi",
+      ],
+      popular: false,
+    },
+    {
+      name: "FARSAN",
+      items: [
+        "Vagharelo Rotlo(Koro)",
+        "Bhajiya",
+        "Bhakharwadi",
+        "Kachori",
+        "Samosa",
+        
+      ],
+    },
+     
+     {
+      name: "INDIAN BREAD",
+      items: [
+        "Bajri Rotlo",
+        "Phulka Roti",
+        "Paratha",
+      ],
+      popular: false,
+    },
+    {
+      name: "GUJARATI RICE",
+      items: [
+        "Gujarati Dal",
+        "Rice",
+      ],
+      popular: false,
+    },
+    {
+      name: "RICE",
+      items: [
+        "Sadi Khichdi - Kadhi",
+        "Masala Khichdi - Kadhi",
+        "Rajwadi Khichdi - Kadhi",
+        "Dal Fry - Jeera Rice",
       ],
       popular: false,
     },
@@ -155,10 +259,10 @@ const Catering = () => {
                   <CardTitle className="text-xl font-semibold">
                     {pkg.name}
                   </CardTitle>
-                  <p className="text-muted-foreground">{pkg.serves}</p>
+                  {/* <p className="text-muted-foreground">{pkg.serves}</p>
                   <div className="text-3xl font-bold text-primary mt-2">
                     {pkg.price}
-                  </div>
+                  </div> */}
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
@@ -169,13 +273,7 @@ const Catering = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    className="w-full mt-6"
-                    variant={pkg.popular ? "default" : "outline"}
-                    onClick={() => (window.location.href = "/contact")}
-                  >
-                    Order This Package
-                  </Button>
+                  
                 </CardContent>
               </Card>
             ))}
@@ -195,7 +293,7 @@ const Catering = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Call Now: +61 492004534
+              Call Now: +61 412 658 983
             </Button>
             <Button size="lg" variant="outline">
               WhatsApp Us
