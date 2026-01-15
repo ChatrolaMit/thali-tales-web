@@ -29,11 +29,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#home" className="hover:text-primary-foreground transition-colors">Home</a></li>
-              <li><a href="#serve" className="hover:text-primary-foreground transition-colors">Menu</a></li>
-              <li><a href="#about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
+              <li><a href="/" className="hover:text-primary-foreground transition-colors">Home</a></li>
+              <li><a href="/menu" className="hover:text-primary-foreground transition-colors">Menu</a></li>
+              <li><a href="/about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
              
-              <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
+              <li><a href="/contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -54,15 +54,15 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm">23 Meriton Place, Clayton South, APAC 3169</span>
+                <span className="text-sm"> 23 Meriton Pl, Clayton South VIC 3169, Australia</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+61 492004534</span>
+                <span className="text-sm">+61 492 004 534</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">info@purevegcuisine.com</span>
+                <span className="text-sm">info@tulsikathiyawadi.com</span>
               </div>
             </div>
           </div>

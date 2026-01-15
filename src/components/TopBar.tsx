@@ -9,15 +9,15 @@ const TopBar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>+61 492004534</span>
+              <span>+61 492 004 534</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>info@purevegcuisine.com</span>
+              <span>info@tulsikathiyawadi.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4" />
-              <span>23 Meriton Place, Clayton South, APAC 3169</span>
+              <span>23 Meriton Pl, Clayton South VIC 3169, Australia</span>
             </div>
           </div>
           

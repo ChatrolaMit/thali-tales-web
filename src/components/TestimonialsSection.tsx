@@ -7,31 +7,31 @@ const TestimonialsSection = () => {
 
   const testimonials = [
   {
-    name: "Priya Sharma",
-    location: "Richmond Hills",
+    name: "Trupal Patel",
+    // location: "Richmond Hills",
     rating: 5,
-    text: "Swad Ni Saruat was the perfect start to our meal! The flavors are authentic Kathiyawadi style, and the spices are just right. Loved the warm hospitality too!",
+    text: "Stepping into this restaurant is like taking a culinary journey to the heart of Kathiyawad. The flavors are incredibly authentic and rich, with each dish telling a story of traditional Gujarati cooking.",
     image: "👩‍💼"
   },
   {
-    name: "Rajesh Patel",
-    location: "Sunnyvale",
+    name: "Anjali Parekh",
+    // location: "Sunnyvale",
     rating: 5,
-    text: "Cheese Paneer Dhamaal is a must-try! The creamy paneer and rich spices take you straight to Kathiyawad. Roti Rotlo and Rice Ni Lijjat complement it perfectly. Highly recommended!",
+    text: "We tried cheese butter masala and ghee rotli (which was piping hot) it was really really delicious. Kudos to the staff for being kind and welcoming.",
     image: "👨‍💻"
   },
   {
-    name: "Anita Gupta",
-    location: "Maple Grove",
+    name: "Meet Shah ",
+    // location: "Maple Grove",
     rating: 5,
-    text: "Dal Ni Kamal is simply outstanding! Every bite is full of authentic flavor. The Kathiyawadi Ramzat curry is another highlight. Sweets and drinks finish the meal beautifully.",
+    text: "Really good and tasty Kathiyavadi food.Highly recommended for Bajri no Rotlo, Sev Tameta. Nice options for No Onion Garlic/ Jain.",
     image: "👩‍🏫"
   },
   {
-    name: "Vikram Singh",
-    location: "Oakwood",
+    name: "Hardik shah",
+    // location: "Oakwood",
     rating: 5,
-    text: "Excellent overall experience! The meal felt like home-cooked Kathiyawadi food. Loved the combination of Roti Rotlo, Rice Ni Lijjat, and the curries. Definitely coming back!",
+    text: "The food was incredible and the staff was amazing. If you want kathiyawadi food then this is place to be. This is the place has to be on everyones devour list!!",
     image: "👨‍🔧"
   }
 ];
@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
                           {testimonial.name}
                         </h4>
                         <p className="text-muted-foreground">
-                          {testimonial.location}
+                          {/* {testimonial.location} */}
                         </p>
                       </div>
                     </div>

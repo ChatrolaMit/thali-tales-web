@@ -2,9 +2,6 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import about from "@/assets/about.jpeg";
-import chef1 from "@/assets/chef1.jpg";
-import chef2 from "@/assets/checf2.jpg";
-import chef3 from "@/assets/chef3.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Heart,
@@ -12,29 +9,10 @@ import {
   Shield,
   Award,
   Users,
-  ChefHat,
   Sparkles,
 } from "lucide-react";
 
 const AboutUs = () => {
-  const teamMembers = [
-    {
-      name: "Rajesh Kumar",
-      role: "Head Chef",
-      image: chef1,
-    },
-    {
-      name: "Priya Sharma",
-      role: "Kitchen Manager",
-      image: chef2,
-    },
-    {
-      name: "Amit Patel",
-      role: "Customer Support",
-      image: chef3,
-    },
-  ];
-
   const values = [
     {
       icon: Heart,
@@ -84,7 +62,6 @@ const AboutUs = () => {
       <section className="section-spacing">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
             <div className="space-y-6">
               <h2 className="heading-secondary text-gradient">Our Story</h2>
 
@@ -92,39 +69,35 @@ const AboutUs = () => {
                 <p>
                   At Tulsi Kathiyawadi, located in the heart of Clayton,
                   Melbourne, we bring the rich and rustic flavors of Gujarat
-                  straight to your table.  
+                  straight to your table.
                 </p>
 
                 <p>
-                 Specialising in traditional
-                  Kathiyawadi cuisine, our fully vegetarian menu is a
-                  celebration of bold spices, homestyle cooking, and
-                  heartwarming hospitality. From our signature Vagharelo Rotlo
-                  to the flavorful Paneer Takatak, Sev Tomato, and Surti
-                  Undhiyu, each dish is crafted using authentic ingredients and
-                  time-honored recipes from the Kathiyawad region of India.
+                  Specialising in traditional Kathiyawadi cuisine, our fully
+                  vegetarian menu is a celebration of bold spices, homestyle
+                  cooking, and heartwarming hospitality. From our signature
+                  Vagharelo Rotlo to the flavorful Paneer Takatak, Sev Tomato,
+                  and Surti Undhiyu, each dish is crafted using authentic
+                  ingredients and time-honored recipes.
                 </p>
 
                 <p>
-                  Our
-                  chefs prepare every meal fresh, ensuring a dining experience
-                  that is both comforting and memorable.
+                  Our chefs prepare every meal fresh, ensuring a dining
+                  experience that is both comforting and memorable.
                 </p>
               </div>
             </div>
 
-            {/* Right Image */}
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant">
                 <img
                   src={about}
-                  alt="Happy family enjoying homemade meals"
+                  alt="Kathiyawadi food experience"
                   className="w-full h-80 lg:h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
 
-              {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 bg-primary rounded-full w-12 h-12 flex items-center justify-center">
                 <Users className="text-primary-foreground w-6 h-6" />
               </div>
@@ -149,40 +122,24 @@ const AboutUs = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-card border-border shadow-medium hover:shadow-elegant transition-shadow duration-300">
+            <Card className="bg-card shadow-medium">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 rounded-full p-3 mr-4">
-                    <Leaf className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">
-                    Our Mission
-                  </h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  To serve authentic, pure vegetarian cuisine that nourishes the
-                  body and soul, while preserving traditional cooking methods
-                  and promoting sustainable, healthy eating habits in our
-                  community.
+                <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
+                <p className="text-muted-foreground">
+                  To serve authentic, pure vegetarian cuisine that nourishes
+                  the body and soul while preserving traditional cooking
+                  methods.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border shadow-medium hover:shadow-elegant transition-shadow duration-300">
+            <Card className="bg-card shadow-medium">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 rounded-full p-3 mr-4">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">
-                    Our Vision
-                  </h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  To become the most trusted name in vegetarian dining,
-                  expanding our reach while maintaining the highest standards of
-                  quality, authenticity, and customer satisfaction across all
-                  our services.
+                <h3 className="text-xl font-semibold mb-3">Our Vision</h3>
+                <p className="text-muted-foreground">
+                  To become the most trusted name in vegetarian dining while
+                  maintaining the highest standards of quality and
+                  authenticity.
                 </p>
               </CardContent>
             </Card>
@@ -190,45 +147,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="section-spacing">
-        <div className="section-container">
-          <div className="text-center mb-12">
-            <h2 className="heading-secondary text-gradient mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              The passionate people behind every delicious meal
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative inline-block mb-4">
-                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-medium group-hover:shadow-elegant transition-shadow duration-300">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -bottom-2 -right-2 bg-primary rounded-full w-8 h-8 flex items-center justify-center">
-                    <ChefHat className="w-4 h-4 text-primary-foreground" />
-                  </div>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-medium">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="section-spacing bg-accent/30">
+      {/* 🌟 UPDATED VALUES SECTION 🌟 */}
+      <section className="section-spacing bg-gradient-to-br from-primary/5 via-orange-50 to-background">
         <div className="section-container">
           <div className="text-center mb-12">
             <h2 className="heading-secondary text-gradient mb-4">Our Values</h2>
@@ -241,16 +161,16 @@ const AboutUs = () => {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="bg-card border-border shadow-medium hover:shadow-elegant transition-all duration-300 hover:-translate-y-1"
+                className="bg-card shadow-medium hover:shadow-elegant transition-all duration-300 hover:-translate-y-1"
               >
                 <CardContent className="p-6 text-center">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                     <value.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                  <h3 className="text-lg font-semibold mb-3">
                     {value.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground">
                     {value.description}
                   </p>
                 </CardContent>
@@ -260,34 +180,26 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <section className="section-spacing">
         <div className="section-container">
           <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-3xl p-12 text-center">
-            <div className="max-w-3xl mx-auto">
-              <Sparkles className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h2 className="heading-secondary text-gradient mb-6">
-                Experience the Difference
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Join our family of satisfied customers and taste the authentic
-                flavors that have made us Mumbai's favorite vegetarian
-                restaurant.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/menu"
-                  className="btn-primary inline-flex items-center justify-center gap-2"
-                >
-                  View Our Menu
-                </a>
-                <a
-                  href="/#contact"
-                  className="btn-secondary inline-flex items-center justify-center gap-2"
-                >
-                  Contact Us
-                </a>
-              </div>
+            <Sparkles className="h-12 w-12 text-primary mx-auto mb-6" />
+            <h2 className="heading-secondary text-gradient mb-6">
+              Experience the Difference
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Join our family of satisfied customers and taste the authentic
+              flavors that define Tulsi Kathiyawadi.
+            </p>
+
+            <div className="flex gap-4 justify-center">
+              <a href="/menu" className="btn-primary">
+                View Our Menu
+              </a>
+              <a href="/contact" className="btn-secondary">
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

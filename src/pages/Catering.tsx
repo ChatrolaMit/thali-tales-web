@@ -292,12 +292,10 @@ const Catering = () => {
             quote for your event
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => (window.location.href = "/contact")}>
               Call Now: +61 412 658 983
             </Button>
-            <Button size="lg" variant="outline">
-              WhatsApp Us
-            </Button>
+           
           </div>
         </div>
       </section>

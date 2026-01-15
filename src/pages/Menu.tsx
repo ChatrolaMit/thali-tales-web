@@ -84,7 +84,8 @@ const Menu = () => {
         price: "$17.00",
         image: vagharelo_rotlo,
         popular: true,
-        jain: false,
+        jain: true,
+        swaminarayan:true,
       },
       {
         id: "2",
@@ -277,6 +278,7 @@ const Menu = () => {
         price: "$18.00",
         image: "",
         popular: true,
+        spicy:true,
       },
       {
         id: "22",
