@@ -5,10 +5,17 @@ import { Badge } from "@/components/ui/badge";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import rosted_papad from "@/assets/rostad_papad.jpeg";
+import bharelo_rotlo from "@/assets/bharelo_rotlo.png";
+import cheese_bharelo_rotlo from "@/assets/cheese_bharelo_rotlo.png";
+import rosted_papad from "@/assets/rosted_papad.png";
+import fry_papad from "@/assets/fry_papad.png";
+import masala_papad from "@/assets/masala_papad.jpeg";
+import ghee_gud from "@/assets/ghee_gud.png";
+import sev_lasaniya from "@/assets/sev_lasaniya.png";
+import kathiyawadi_dhokali from "@/assets/kathiyawadi_dhokali.png";
+
 import jeera_rice from "@/assets/jeera_rice.jpeg";
 import bajra_rotlo from "@/assets/bajra_rotlo.jpg";
-import ghee_gud from "@/assets/ghee_gud.jpg";
 import roti from "@/assets/roti.jpg";
 import plain_khichdi from "@/assets/plain_khichdi.jpeg";
 import kadhi from "@/assets/kadhi.jpeg";
@@ -23,10 +30,9 @@ import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
 import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
 import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
-import masala_papad from "@/assets/masala_papad.jpeg";
+
 import bharela_papad from "@/assets/bharela_papad.jpeg";
 import paneer_takatak from "@/assets/paneer_takatak.png";
-import sev_lasaniya_1 from "@/assets/sev_lasaniya_1.jpg";
 import chana_masala from "@/assets/chana_masala.jpg";
 import ringan_bharthu from "@/assets/ringan_bharthu.jpg";
 import lasaniya_batata from "@/assets/lasaniya_batata.jpg";
@@ -42,12 +48,12 @@ import chas from "@/assets/chas.jpeg";
 import lasai from "@/assets/lasai.jpeg";
 import sev_dungari from "@/assets/sev_dungari.jpg";
 import dai_gathiya from "@/assets/dai_gathiya.jpg";
-import dahi_rotlo from "@/assets/dahi_rotlo.jpg";
+import dahi_rotlo from "@/assets/dahi_rotlo.png";
 import { SwatchBook } from "lucide-react";
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState(
-    "starters_swad_ni_saruat"
+    "starters_swad_ni_saruat",
   );
 
   const categories = [
@@ -85,7 +91,7 @@ const Menu = () => {
         image: vagharelo_rotlo,
         popular: true,
         jain: true,
-        swaminarayan:true,
+        swaminarayan: true,
       },
       {
         id: "2",
@@ -93,9 +99,9 @@ const Menu = () => {
         description:
           "Traditional millet rotlo crumbled and mixed with fresh curd, onions, green chilies, and mild spices — a cooling and comforting Kathiyawadi classic",
         price: "$18.00",
-        image: "",
+        image: dahi_rotlo,
         jain: true,
-        swaminarayan:true,
+        swaminarayan: true,
       },
       {
         id: "3",
@@ -103,7 +109,7 @@ const Menu = () => {
         description:
           "Traditional millet rotlo stuffed with a spicy mix of onions, garlic, green chilies, peanuts, and authentic Kathiyawadi spices — bursting with rustic flavors",
         price: "$12.00",
-        image: "",
+        image: bharelo_rotlo,
         popular: true,
       },
       {
@@ -112,7 +118,7 @@ const Menu = () => {
         description:
           "Traditional millet rotlo stuffed with a rich blend of melted cheese, onions, green chilies, and flavorful spices",
         price: "$14.00",
-        image: "",
+        image: cheese_bharelo_rotlo,
         popular: false,
       },
       {
@@ -120,7 +126,7 @@ const Menu = () => {
         name: "Rosted Papad / Papadi",
         description: "Thin, crispy papad roasted to perfection.",
         price: "$2.50",
-        image: "",
+        image: rosted_papad,
       },
       {
         id: "6",
@@ -128,7 +134,7 @@ const Menu = () => {
         description:
           "Thin, crunchy papad deep-fried until golden and lightly seasoned",
         price: "$2.50",
-        image: "",
+        image: fry_papad,
       },
       {
         id: "7",
@@ -136,7 +142,7 @@ const Menu = () => {
         description:
           "Crispy papad topped with fresh onions, tomatoes, green chilies, herbs, and tangy spices — a crunchy and refreshing starter.",
         price: "$5.00",
-        image: "",
+        image: masala_papad,
       },
       {
         id: "8",
@@ -151,7 +157,7 @@ const Menu = () => {
         name: "Gud Ghee",
         description: "Pure jaggery and desi ghee",
         price: "$4.00",
-        image: "",
+        image: ghee_gud,
         popular: false,
       },
     ],
@@ -165,8 +171,7 @@ const Menu = () => {
         image: sevtomato,
         popular: true,
         jain: true,
-        swaminarayan:true,
-        
+        swaminarayan: true,
       },
       {
         id: "11",
@@ -184,9 +189,9 @@ const Menu = () => {
         description:
           "Spicy garlic curry topped with crunchy sev for a bold Kathiyawadi flavor",
         price: "$17.00",
-        image: "",
+        image: sev_lasaniya,
         popular: true,
-        spicy:true,
+        spicy: true,
       },
       {
         id: "13",
@@ -196,7 +201,7 @@ const Menu = () => {
         price: "$20.00",
         image: "",
         popular: true,
-        jain:true
+        jain: true,
       },
       {
         id: "14",
@@ -204,7 +209,7 @@ const Menu = () => {
         description:
           "Soft wheat dumplings gently cooked in a flavorful, spiced, and tangy gravy, infused with aromatic herbs",
         price: "$19.00",
-        image: "",
+        image: kathiyawadi_dhokali,
         popular: false,
       },
       {
@@ -215,8 +220,8 @@ const Menu = () => {
         price: "$20.00",
         image: "",
         popular: true,
-        jain:true,
-        swaminarayan:true,
+        jain: true,
+        swaminarayan: true,
       },
       {
         id: "16",
@@ -227,7 +232,7 @@ const Menu = () => {
         image: bharela_papad,
         popular: false,
         jain: true,
-        swaminarayan:true,
+        swaminarayan: true,
       },
       {
         id: "17",
@@ -278,7 +283,7 @@ const Menu = () => {
         price: "$18.00",
         image: "",
         popular: true,
-        spicy:true,
+        spicy: true,
       },
       {
         id: "22",
@@ -288,7 +293,7 @@ const Menu = () => {
         price: "$20.00",
         image: "",
         popular: true,
-        spicy:true
+        spicy: true,
       },
       {
         id: "23",
@@ -298,7 +303,7 @@ const Menu = () => {
         price: "$21.00",
         image: "",
         popular: true,
-        spicy:true
+        spicy: true,
       },
       {
         id: "24",
@@ -318,7 +323,7 @@ const Menu = () => {
         image: kaju_gathiya,
         popular: true,
         jain: true,
-        swaminarayan:true,
+        swaminarayan: true,
       },
       {
         id: "26",
@@ -328,9 +333,8 @@ const Menu = () => {
         price: "$22.00",
         image: "",
         popular: true,
-
       },
-       {
+      {
         id: "27",
         name: "Papad nu Shak",
         description:
@@ -338,10 +342,9 @@ const Menu = () => {
         price: "$18.00",
         image: "",
         swaminarayan: true,
-        jain:true
-        
+        jain: true,
       },
-       {
+      {
         id: "28",
         name: "Khichu",
         description:
@@ -349,8 +352,7 @@ const Menu = () => {
         price: "$12.00",
         image: "",
         swaminarayan: true,
-        jain:true
-        
+        jain: true,
       },
     ],
     cheese_paneer_dhamaal: [
@@ -363,7 +365,7 @@ const Menu = () => {
         image: paneer_butter_masala,
         popular: true,
         jain: true,
-        swaminarayan:true,
+        swaminarayan: true,
       },
       {
         id: "30",
@@ -390,7 +392,6 @@ const Menu = () => {
           "Soft paneer cubes cooked with fresh fenugreek leaves and green peas in a rich, creamy tomato-onion gravy",
         price: "$21.00",
         image: "",
-        
       },
       {
         id: "33",
@@ -400,7 +401,7 @@ const Menu = () => {
         price: "$21.00",
         image: "",
         swaminarayan: true,
-        jain:true,
+        jain: true,
       },
       {
         id: "34",
@@ -410,7 +411,7 @@ const Menu = () => {
         price: "$20.00",
         image: "",
         popular: true,
-        spicy:true
+        spicy: true,
       },
       {
         id: "35",
@@ -420,8 +421,8 @@ const Menu = () => {
         price: "$21.00",
         image: "",
         popular: true,
-        swaminarayan:true,
-        jain:true,
+        swaminarayan: true,
+        jain: true,
       },
       {
         id: "36",
@@ -431,7 +432,6 @@ const Menu = () => {
         price: "$22.00",
         image: "",
         popular: true,
-        
       },
       {
         id: "37",
@@ -440,7 +440,6 @@ const Menu = () => {
           "Marinated paneer cubes grilled to perfection and simmered in a rich, creamy tomato-onion gravy",
         price: "$22.00",
         image: "",
-        
       },
       {
         id: "38",
@@ -451,7 +450,7 @@ const Menu = () => {
         image: "",
         popular: true,
         jain: true,
-        swaminarayan:true
+        swaminarayan: true,
       },
       {
         id: "39",
@@ -481,7 +480,7 @@ const Menu = () => {
         image: "",
         popular: true,
         jain: true,
-        swaminarayan:true
+        swaminarayan: true,
       },
       {
         id: "42",
@@ -503,7 +502,7 @@ const Menu = () => {
         image:
           "Crispy, flaky pastry filled with a spicy, sweet, and tangy mixture of fresh green pigeon peas and aromatic spices",
         swaminarayan: true,
-        jain:true
+        jain: true,
       },
       {
         id: "44",
@@ -513,7 +512,7 @@ const Menu = () => {
         price: "$10.00",
         image: "",
         swaminarayan: true,
-        jain:true
+        jain: true,
       },
       {
         id: "45",
@@ -522,7 +521,7 @@ const Menu = () => {
         price: "$12.00",
         image: "",
         swaminarayan: true,
-        jain:true
+        jain: true,
       },
     ],
     sweets: [
@@ -606,7 +605,6 @@ const Menu = () => {
           "Yellow lentils cooked until creamy and tempered with garlic, onions, tomatoes, and aromatic spices",
         price: "$18.00",
         image: "",
-        
       },
       {
         id: "55",
@@ -631,7 +629,6 @@ const Menu = () => {
           "Slow-cooked black lentils and kidney beans simmered with butter, cream, and aromatic spices.",
         price: "$18.00",
         image: "",
-        
       },
     ],
     rice: [
@@ -653,7 +650,7 @@ const Menu = () => {
         price: "$18.00",
         image: "",
         swaminarayan: true,
-        jain:true
+        jain: true,
       },
       {
         id: "60",
@@ -662,8 +659,8 @@ const Menu = () => {
           "Sweet-tangy Gujarati kadhi paired with hearty Kathiyawadi khichdi seasoned with rustic spices.",
         price: "$20.00",
         image: "",
-        swaminarayan:true,
-        jain:true
+        swaminarayan: true,
+        jain: true,
       },
 
       {
@@ -694,8 +691,8 @@ const Menu = () => {
         description: "Flavorful masala rice served with cooling fresh curd.",
         price: "$18.00",
         image: "",
-        swaminarayan:true,
-        jain:true
+        swaminarayan: true,
+        jain: true,
       },
     ],
 
@@ -855,12 +852,21 @@ const Menu = () => {
                     </div>
 
                     {/* Right side - Image */}
-                    <div className="md:w-80 h-48 md:h-auto">
+                    {/* <div className="md:w-80 h-48 md:h-auto">
                       <img
                         src={item.image}
                         alt={item.name}
                         className="w-full h-full object-cover"
                       />
+                    </div> */}
+                    <div className="md:w-80">
+                      <div className="aspect-[4/3] w-full overflow-hidden">
+                        <img
+                          src={item.image || "/placeholder.jpg"}
+                          alt={item.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
                 </CardContent>
