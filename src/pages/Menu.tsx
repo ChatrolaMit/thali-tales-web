@@ -11,8 +11,49 @@ import rosted_papad from "@/assets/rosted_papad.png";
 import fry_papad from "@/assets/fry_papad.png";
 import masala_papad from "@/assets/masala_papad.jpeg";
 import ghee_gud from "@/assets/ghee_gud.png";
+import sev_tomato from "@/assets/sevtomato.jpg";
 import sev_lasaniya from "@/assets/sev_lasaniya.png";
+import dahi_tikhari from "@/assets/dahi_tikhari.png";
 import kathiyawadi_dhokali from "@/assets/kathiyawadi_dhokali.png";
+import ringan_bharthu from "@/assets/ringan_bharthu.png";
+import bharela_ringan from "@/assets/bharela_ringan.png";
+import dahi_gathiya from "@/assets/dahi_gathiya.png";
+import desi_chana from "@/assets/desi_chana.png";
+import mug_masala from "@/assets/mug_masala.png";
+import lasaniya_batata from "@/assets/lasaniya_batata.png";
+import sev_dungari from "@/assets/sev_dungari.png";
+import cheese_sev_lili_dungari from "@/assets/cheese_sev_lili_dungari.png";
+import kaju_lasan from "@/assets/kaju_lasan.jpg";
+import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
+import undhiyu from "@/assets/undhiyu.png";
+import papad_nu_shak from "@/assets/papad_nu_shak.png";
+import khichu from "@/assets/khichu.png";
+import paneer_takatak from "@/assets/paneer_takatak.png";
+import paneer_angara from "@/assets/paneer_angara.png";
+import methi_mutter_paneer from "@/assets/methi_mutter_paneer.png";
+import veg_kolhapuri from "@/assets/veg_kolhapuri.png";
+import palak_paneer from "@/assets/palak_paneer.png";
+import paneer_bhurji from "@/assets/paneer_bhurji.png";
+import paneer_tikka_masala from "@/assets/paneer_tikka_masala.jpg";
+import cheese_butter_masala from "@/assets/cheese_butter_masala.png";
+import cheese_lasaniya from "@/assets/cheese_lasaniya.png";
+import kaju_butter_masala from "@/assets/kaju_butter_masala.png";
+import cheese_kaju_masala from "@/assets/cheese_kaju_masala.png";
+import lilva_kachori from "@/assets/lilva_kachori.png";
+import veg_cutlet from "@/assets/veg_cutlet.png";
+import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
+import gulab_jambun from "@/assets/gulab_jambun.jpeg";
+import sukhadi from "@/assets/sukhadi.jpeg";
+import puran_poli from "@/assets/puran_poli.png";
+
+
+
+
+
+
+
+
+
 
 import jeera_rice from "@/assets/jeera_rice.jpeg";
 import bajra_rotlo from "@/assets/bajra_rotlo.jpg";
@@ -21,32 +62,21 @@ import plain_khichdi from "@/assets/plain_khichdi.jpeg";
 import kadhi from "@/assets/kadhi.jpeg";
 import rice from "@/assets/rice.jpg";
 import paneer_lasagna from "@/assets/paneer_lasagna.png";
-import palak_paneer from "@/assets/palak_paneer.png";
 import chess_butter_masala from "@/assets/chess_butter_masala.png";
 import kaju_curry from "@/assets/kaju_curry.png";
-import sevtomato from "@/assets/sevtomato.jpg";
-import kaju_lasan from "@/assets/kaju_lasan.jpg";
-import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
 import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
-import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
 
 import bharela_papad from "@/assets/bharela_papad.jpeg";
-import paneer_takatak from "@/assets/paneer_takatak.png";
-import chana_masala from "@/assets/chana_masala.jpg";
-import ringan_bharthu from "@/assets/ringan_bharthu.jpg";
-import lasaniya_batata from "@/assets/lasaniya_batata.jpg";
-import bharela_ringan from "@/assets/bharela_ringan.jpg";
-import surti_undhiyu from "@/assets/surti_undhiyu.jpg";
+
+
+
 import dal_fry from "@/assets/dal_fry.jpg";
 import butter_dal_tadka from "@/assets/butter_dal_tadka_fry.jpg";
-import sukhadi from "@/assets/sukhadi.jpeg";
-import gulab_jambun from "@/assets/gulab_jambun.jpeg";
 import mango_ras from "@/assets/mango_ras.jpeg";
 import barja_rotlo_churmo from "@/assets/barja_rotlo_churmo.jpeg";
 import chas from "@/assets/chas.jpeg";
 import lasai from "@/assets/lasai.jpeg";
-import sev_dungari from "@/assets/sev_dungari.jpg";
 import dai_gathiya from "@/assets/dai_gathiya.jpg";
 import dahi_rotlo from "@/assets/dahi_rotlo.png";
 import { SwatchBook } from "lucide-react";
@@ -168,7 +198,7 @@ const Menu = () => {
         description:
           "Tangy tomato curry cooked with spices and topped with crunchy sev - a classic Gujarati comfort dish.",
         price: "$17.00",
-        image: sevtomato,
+        image: sev_tomato,
         popular: true,
         jain: true,
         swaminarayan: true,
@@ -179,7 +209,7 @@ const Menu = () => {
         description:
           "Spiced yogurt curry cooked with aromatic spices and tempered with mustard seeds, curry leaves, and green chilies - light, tangy, and comforting.",
         price: "$12.00",
-        image: "",
+        image: dahi_tikhari,
         jain: true,
         swaminarayan: true,
       },
@@ -199,7 +229,7 @@ const Menu = () => {
         description:
           "Smoky roasted eggplant mashed and cooked with onions, tomatoes, garlic, and spices.",
         price: "$20.00",
-        image: "",
+        image: ringan_bharthu,
         popular: true,
         jain: true,
       },
@@ -218,7 +248,7 @@ const Menu = () => {
         description:
           "Ringan stuffed with a spiced gram flour mixture and aromatic Kathiyawadi spices — a traditional, flavorful delicacy.",
         price: "$20.00",
-        image: "",
+        image: bharela_ringan,
         popular: true,
         jain: true,
         swaminarayan: true,
@@ -240,7 +270,7 @@ const Menu = () => {
         description:
           "Crispy gathiya in spiced yogurt, tempered with mustard, cumin, curry leaves, and red chilies, finished with fresh coriander",
         price: "$18.00",
-        image: "",
+        image: dahi_gathiya,
         swaminarayan: true,
         jain: true,
       },
@@ -250,7 +280,7 @@ const Menu = () => {
         description:
           "Tender desi chickpeas slow-cooked in a spiced tomato-based sauce with aromatic herbs",
         price: "$18.00",
-        image: "",
+        image: desi_chana,
         swaminarayan: true,
         jain: true,
       },
@@ -260,7 +290,7 @@ const Menu = () => {
         description:
           "Whole green moong beans cooked with aromatic spices, tempered with mustard seeds, ginger, garlic, and onions, finished with tomatoes and fresh coriander",
         price: "$18.00",
-        image: "",
+        image: mug_masala,
         swaminarayan: true,
         jain: true,
       },
@@ -281,7 +311,7 @@ const Menu = () => {
         description:
           "Baby potatoes cooked in a spicy garlic and red chili paste with onions, tomatoes, and aromatic spices, tempered with cumin, coriander, and asafoetida, and finished with fresh coriander",
         price: "$18.00",
-        image: "",
+        image: lasaniya_batata,
         popular: true,
         spicy: true,
       },
@@ -291,7 +321,7 @@ const Menu = () => {
         description:
           "Fresh spring onions and thick sev cooked in a spicy garlic-chili paste, finished in a tangy buttermilk or gram flour gravy",
         price: "$20.00",
-        image: "",
+        image: sev_dungari,
         popular: true,
         spicy: true,
       },
@@ -301,7 +331,7 @@ const Menu = () => {
         description:
           "Fresh spring onions and thick sev cooked in a tangy, spicy gravy with cheese, optionally enriched with buttermilk or gram flour, and garnished with fresh coriander",
         price: "$21.00",
-        image: "",
+        image: cheese_sev_lili_dungari,
         popular: true,
         spicy: true,
       },
@@ -331,7 +361,7 @@ const Menu = () => {
         description:
           "Potatoes, yams, sweet potatoes, brinjals, and beans slow-cooked with aromatic green masala and fenugreek dumplings",
         price: "$22.00",
-        image: "",
+        image: undhiyu,
         popular: true,
       },
       {
@@ -340,7 +370,7 @@ const Menu = () => {
         description:
           "Potatoes, yams, sweet potatoes, brinjals, and beans slow-cooked with aromatic green masala and fenugreek dumplings",
         price: "$18.00",
-        image: "",
+        image: papad_nu_shak,
         swaminarayan: true,
         jain: true,
       },
@@ -350,7 +380,7 @@ const Menu = () => {
         description:
           "Potatoes, yams, sweet potatoes, brinjals, and beans slow-cooked with aromatic green masala and fenugreek dumplings",
         price: "$12.00",
-        image: "",
+        image: khichu,
         swaminarayan: true,
         jain: true,
       },
@@ -373,7 +403,7 @@ const Menu = () => {
         description:
           "Crispy paneer cubes tossed with onions, bell peppers, and tomatoes in a spicy, flavorful gravy, enriched with cream or cashew paste and garnished with fresh coriander",
         price: "20.99",
-        image: "",
+        image: paneer_takatak,
         popular: true,
       },
       {
@@ -382,7 +412,7 @@ const Menu = () => {
         description:
           "Paneer cubes cooked in a rich, spicy gravy with onions, tomatoes, bell peppers, and cashews, finished with a smoky “Angara” flavor",
         price: "$20.00",
-        image: "",
+        image: paneer_angara,
         spicy: true,
       },
       {
@@ -391,7 +421,7 @@ const Menu = () => {
         description:
           "Soft paneer cubes cooked with fresh fenugreek leaves and green peas in a rich, creamy tomato-onion gravy",
         price: "$21.00",
-        image: "",
+        image: methi_mutter_paneer,
       },
       {
         id: "33",
@@ -399,7 +429,7 @@ const Menu = () => {
         description:
           "A fiery, aromatic curry of mixed vegetables like carrots, beans, potatoes, cauliflower, and peas, cooked in a rich, spiced coconut-onion gravy with whole roasted spices",
         price: "$21.00",
-        image: "",
+        image: veg_kolhapuri,
         swaminarayan: true,
         jain: true,
       },
@@ -419,7 +449,7 @@ const Menu = () => {
         description:
           "Soft paneer cubes simmered in a smooth, spiced spinach gravy",
         price: "$21.00",
-        image: "",
+        image: palak_paneer,
         popular: true,
         swaminarayan: true,
         jain: true,
@@ -430,7 +460,7 @@ const Menu = () => {
         description:
           "Spiced, scrambled paneer cooked with onions, tomatoes, and aromatic herbs",
         price: "$22.00",
-        image: "",
+        image: paneer_bhurji,
         popular: true,
       },
       {
@@ -439,7 +469,7 @@ const Menu = () => {
         description:
           "Marinated paneer cubes grilled to perfection and simmered in a rich, creamy tomato-onion gravy",
         price: "$22.00",
-        image: "",
+        image: paneer_tikka_masala,
       },
       {
         id: "38",
@@ -447,7 +477,7 @@ const Menu = () => {
         description:
           "Soft cheese cubes simmered in a rich, creamy tomato and cashew-based gravy",
         price: "$21.00",
-        image: "",
+        image: cheese_butter_masala,
         popular: true,
         jain: true,
         swaminarayan: true,
@@ -458,7 +488,7 @@ const Menu = () => {
         description:
           "A rich and comforting dish, cheese lasagna layers wide lasagna noodles with a savory tomato sauce and a blend of creamy",
         price: "$21.00",
-        image: "",
+        image: cheese_lasaniya,
         popular: false,
       },
       {
@@ -477,7 +507,7 @@ const Menu = () => {
         description:
           "Roasted cashews cooked in a rich, buttery tomato gravy with subtle spices",
         price: "$21.00",
-        image: "",
+        image: kaju_butter_masala,
         popular: true,
         jain: true,
         swaminarayan: true,
@@ -488,7 +518,7 @@ const Menu = () => {
         description:
           "Tender cheese and cashews simmered in a velvety tomato-butter sauce, finished with cream",
         price: "$22.00",
-        image: "",
+        image: cheese_kaju_masala,
         swaminarayan: true,
         jain: true,
       },
@@ -497,9 +527,9 @@ const Menu = () => {
       {
         id: "43",
         name: "Lilva Kachori (4 Pcs)",
-        description: "",
+        image: lilva_kachori,
         price: "$10.00",
-        image:
+        description:
           "Crispy, flaky pastry filled with a spicy, sweet, and tangy mixture of fresh green pigeon peas and aromatic spices",
         swaminarayan: true,
         jain: true,
@@ -510,7 +540,7 @@ const Menu = () => {
         description:
           "Spiced mashed vegetables shaped into patties, coated in breadcrumbs",
         price: "$10.00",
-        image: "",
+        image: veg_cutlet,
         swaminarayan: true,
         jain: true,
       },
@@ -519,7 +549,7 @@ const Menu = () => {
         name: "Dry Vagharelo Rotlo",
         description: "Crumbled millet flatbread stir-fried with a spicy",
         price: "$12.00",
-        image: "",
+        image: vagharelo_rotlo,
         swaminarayan: true,
         jain: true,
       },
@@ -549,7 +579,7 @@ const Menu = () => {
         description:
           "Soft, sweet flatbread stuffed with a spiced chana dal and jaggery filling",
         price: "$8.00",
-        image: "",
+        image: puran_poli,
         popular: false,
       },
 
