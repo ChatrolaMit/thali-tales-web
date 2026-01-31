@@ -789,6 +789,8 @@ const Menu = () => {
     ],
   };
 
+ 
+ 
   return (
     <div className="min-h-screen">
       <TopBar />
@@ -796,29 +798,28 @@ const Menu = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/10 via-primary/5 to-background py-20">
-        <div className="section-container">
+        <div className="max-w-[98%] mx-auto">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 font-heading">
               Our <span className="text-primary">Menu</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Discover our authentic vegetarian dishes made with fresh
-              ingredients and traditional recipes
+              Discover our authentic vegetarian dishes made with fresh ingredients and traditional recipes
             </p>
           </div>
         </div>
       </section>
 
       {/* Menu Navigation */}
-      <section className="py-8 border-b border-border bg-card/50">
-        <div className="section-container">
-          <div className="flex justify-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar">
+      <section className="py-8 border-b border-border bg-card/50 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div className="w-full">
+          <div className="flex gap-2 overflow-x-auto sm:overflow-x-hidden justify-start sm:justify-center whitespace-nowrap no-scrollbar px-4">
             {categories.map((category) => (
               <Button
                 key={category.id}
                 variant={activeCategory === category.id ? "default" : "outline"}
                 onClick={() => setActiveCategory(category.id)}
-                className="min-w-[100px]"
+                className="px-4 py-2 text-sm sm:text-base min-w-max"
               >
                 {category.name}
               </Button>
@@ -837,79 +838,16 @@ const Menu = () => {
           </div>
 
           <div className="space-y-6">
-            {menuItems[activeCategory as keyof typeof menuItems].map((item) => (
+            {menuItems[activeCategory].map((item) => (
               <Card
                 key={item.id}
                 className="overflow-hidden hover:shadow-elegant transition-shadow duration-300"
               >
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
-                    {/* Left side - Item details */}
-                    <div className="flex-1 p-6">
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <h3 className="text-xl font-semibold text-foreground">
-                              {item.name}
-                            </h3>
-                            {item.popular && (
-                              <Badge
-                                variant="secondary"
-                                className="bg-primary/10 text-primary"
-                              >
-                                Popular
-                              </Badge>
-                            )}
 
-                            {item.jain && (
-                              <Badge
-                                variant="secondary"
-                                className="bg-primary/10 text-primary"
-                              >
-                                Jain
-                              </Badge>
-                            )}
-
-                            {item.swaminarayan && (
-                              <Badge
-                                variant="secondary"
-                                className="bg-primary/10 text-primary"
-                              >
-                                Swaminarayan
-                              </Badge>
-                            )}
-
-                            {item.spicy && (
-                              <Badge
-                                variant="secondary"
-                                className="bg-primary/10 text-primary"
-                              >
-                                Spicy
-                              </Badge>
-                            )}
-                          </div>
-                          <p className="text-muted-foreground leading-relaxed">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <span className="text-2xl font-bold text-primary">
-                          {item.price}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Right side - Image */}
-                    {/* <div className="md:w-80 h-48 md:h-auto">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div> */}
-                    <div className="md:w-80">
+                    {/* Image first on mobile */}
+                    <div className="md:w-80 order-first md:order-last mb-4 md:mb-0">
                       <div className="aspect-[4/3] w-full overflow-hidden">
                         <img
                           src={item.image || "/placeholder.jpg"}
@@ -918,6 +856,33 @@ const Menu = () => {
                         />
                       </div>
                     </div>
+
+                    {/* Description */}
+                    <div className="flex-1 p-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <div>
+                          <div className="flex flex-wrap gap-2 mb-2">
+                            <h3 className="text-xl font-semibold text-foreground">
+                              {item.name}
+                            </h3>
+
+                            {item.popular && <Badge>Popular</Badge>}
+                            {item.jain && <Badge>Jain</Badge>}
+                            {item.swaminarayan && <Badge>Swaminarayan</Badge>}
+                            {item.spicy && <Badge>Spicy</Badge>}
+                          </div>
+
+                          <p className="text-muted-foreground leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      <span className="text-2xl font-bold text-primary">
+                        {item.price}
+                      </span>
+                    </div>
+
                   </div>
                 </CardContent>
               </Card>
@@ -932,3 +897,6 @@ const Menu = () => {
 };
 
 export default Menu;
+ 
+
+
