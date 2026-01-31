@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
-import kaju_lasan from "@/assets/kaju_lasan.jpg";
+import paneer_takatak from "@/assets/paneer_takatak.png";
 import sukhadi from "@/assets/sukhadi.jpeg";
 import vagharelo_rotlo from "@/assets/vagharelo_rotlo.jpeg";
 import paneer_butter_masala from "@/assets/paneer_butter_masala.jpeg";
-import mango_ras from "@/assets/mango_ras.jpeg";
-import barja_rotlo_churmo from "@/assets/barja_rotlo_churmo.jpeg";
+import lasai from "@/assets/lasai.jpeg";
+import gulab_jambun from "@/assets/gulab_jambun.jpeg";
 import sevtomato from "@/assets/sevtomato.jpg";
 import kaju_gathiya from "@/assets/kaju_gathiya.jpeg";
-import kadhi from "@/assets/kadhi.jpeg";
+import lilva_kachori from "@/assets/lilva_kachori.png";
 import kaju_paneer from "@/assets/kaju_paneer.jpg";
-import plain_khichdi from "@/assets/plain_khichdi.jpeg";
+import masala_rice from "@/assets/masala_rice.png";
 import jeera_rice from "@/assets/jeera_rice.jpeg";
 
 const GallerySection = () => {
@@ -19,15 +19,15 @@ const GallerySection = () => {
   const galleryImages = [
     { src: sevtomato, alt: "Sev Tomato", category: "Curries Kathiyawadi Ramzat" },
     { src: sukhadi, alt: "Sukhadi", category: "Sweets" },
-    { src: kaju_lasan, alt: "Kaju Lasan", category: "Curries Kathiyawadi Ramzat" },
+    { src: paneer_takatak, alt: "Paneer Takatak", category: "Cheese Paneer Dhamaal" },
     { src: vagharelo_rotlo, alt: "Special Vagharelo Rotlo", category: "Starters Swad Ni Saruat" },
     { src: paneer_butter_masala, alt: "Paneer Butter Masala", category: "Cheese Paneer Dhamaal" },
-    { src: mango_ras, alt: "Mango Ras", category: "Sweets" },
-    { src: barja_rotlo_churmo, alt: "Barja Rotlo Churmo", category: "Sweets" },
+    { src: lasai, alt: "Mango lassie", category: "Beverages" },
+    { src: gulab_jambun, alt: "Gulab Jamun", category: "Sweets" },
     { src: kaju_gathiya, alt: "Kaju Gathiya", category: "Curries Kathiyawadi Ramzat" },
-    { src: kadhi, alt: "Kadhi", category: "Rice Ni Lijjat" },
+    { src: lilva_kachori, alt: "Lilva Kachori", category: "Snacks" },
     { src: kaju_paneer, alt: "Kaju Paneer", category: "Cheese Paneer Dhamaal" },
-    { src: plain_khichdi, alt: "Plain Khichdi", category: "Rice Ni Lijjat" },
+    { src: masala_rice, alt: "Masala Rice", category: "Rice Ni Lijjat" },
     { src: jeera_rice, alt: "Jeera Rice", category: "Rice Ni Lijjat" },
   ];
 

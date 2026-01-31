@@ -44,7 +44,7 @@ const Footer = () => {
               <li>🥡 Take Away</li>
               <li>🎉 Party Orders</li>
               <li>💳 Online Payment</li>
-              <li>📱 Mobile Ordering</li>
+              <li>🍴 Catering</li>
             </ul>
           </div>
 

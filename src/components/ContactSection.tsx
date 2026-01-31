@@ -98,7 +98,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="heading-tertiary">Email Us</h3>
                   <p className="text-muted-foreground">
-                    info@tulsikathiyawadi.com<br />
+                    trupti2610@gmail.com<br />
                     
                   </p>
                 </div>

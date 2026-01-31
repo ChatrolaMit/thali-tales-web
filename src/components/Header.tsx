@@ -55,11 +55,7 @@ const Header = () => {
                     Uber Eats
                   </a>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground">
-                  <a href="https://doordash.com" target="_blank" rel="noopener noreferrer">
-                    DoorDash
-                  </a>
-                </DropdownMenuItem>
+                
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>

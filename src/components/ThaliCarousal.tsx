@@ -33,7 +33,7 @@ const thalis: Thali[] = [
     description:
       "Three pieces",
     price: 6.00,
-    rating: 4.5,
+    rating: 4.8,
   },
   {
     id: 3,
@@ -42,16 +42,16 @@ const thalis: Thali[] = [
     description:
       "Include rice, vegetables, roti, dal, papad, dahi, chutney, pickle",
     price: 20.00,
-    rating: 4.3,
+    rating: 4.9,
   },
   {
     id: 4,
-    name: "Vagharelo Rotlo - Dah",
+    name: "Vagharelo Rotlo",
     image: vagharelo_rotlo,
     description:
       "Traditional millet rotlo crumbled and tempered with garlic, onions, green chilies, and spices — a rustic Kathiyawadi favorite",
     price: 17.00,
-    rating: 4.6,
+    rating: 5,
   },
 ];
 
