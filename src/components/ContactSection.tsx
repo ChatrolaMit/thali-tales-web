@@ -113,8 +113,8 @@ const ContactSection = () => {
                 <div>
                   <h3 className="heading-tertiary">Opening Hours</h3>
                   <div className="text-muted-foreground space-y-1">
-                    <p>Monday - Thrusday: 05:00 PM - 11:59 PM</p>
-                    <p>Friday - Sunday: 5:00 PM - 11:00 PM</p>
+                    <p>Monday - Thrusday: 5:00 PM - 10:59 PM</p>
+                    <p>Friday - Sunday: 5:00 PM - 11:59 PM</p>
                   </div>
                 </div>
               </div>

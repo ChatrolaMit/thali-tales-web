@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import HeroContent from "./HeroContent";
+
 // import ThaliSelector from "./ThaliSelector";
 import ThaliCarousel from "./ThaliCarousal";
 import { Button } from "./ui/button";
@@ -94,37 +94,7 @@ const RestaurantLanding = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-8"
               >
-                {/* <div className="mt-8s">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                    {currentThali?.name}
-                  </h1>
-
-                  <p className="text-muted-foreground text-lg max-w-md leading-relaxed">
-                    {currentThali?.description}
-                  </p>
-
-                  <div className="flex items-center space-x-2">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`w-5 h-5 ${
-                            i < Math.floor(currentThali?.rating || 0)
-                              ? "text-yellow-400 fill-current"
-                              : "text-gray-300"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                    <span className="text-foreground font-medium">
-                      {currentThali?.rating}
-                    </span>
-                    <span className="text-muted-foreground">
-                      (2.5k reviews)
-                    </span>
-                  </div>
-                </div> */}
-                <div className="text-left space-y-8 mt-32">
+                <div className="text-left space-y-8 mt-12">
                   <h1
                     className="text-5xl lg:text-7xl font-bold leading-tight font-heading"
                     style={{ color: "hsl(120, 45%, 25%)" }}
@@ -162,18 +132,7 @@ const RestaurantLanding = () => {
                   </div>
                 </div>
 
-                {isMobile && (
-                  <div className="w-full h-full flex flex-col items-center justify-center space-y-6">
-                    {/* Thali Image */}
-                    <div className="w-[300px] h-[300px] rounded-full overflow-hidden bg-gray-100 shadow-lg border border-border/50">
-                      <img
-                        src={currentThali?.image}
-                        alt={currentThali?.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                )}
+               
 
                 {/* <div className="pt-6">
                   <ThaliSelector
